@@ -1,0 +1,972 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Script xmlns:i="http://www.w3.org/2001/XMLSchema-instance" z:Id="i1" xmlns:z="http://schemas.microsoft.com/2003/10/Serialization/" xmlns="http://schemas.datacontract.org/2004/07/BR.Logic">
+  <CompilationType>CSharp</CompilationType>
+  <Description i:nil="true" />
+  <Id>4c1c6f71-5389-41f6-b0c5-8f586e2787ab</Id>
+  <Logic z:Id="i2" i:type="ExecutedStep">
+    <Childs>
+      <AbstractStep z:Id="i3" i:type="CommentStep">
+        <Childs />
+        <Id>a860fdfd-6cc3-47a8-aa93-310e3afcbdca</Id>
+        <Parent z:Ref="i2" />
+        <PropertyValues />
+        <SelectedOptionId i:nil="true" />
+        <Text>Обновляет информацию о пользователе</Text>
+      </AbstractStep>
+      <AbstractStep z:Id="i4" i:type="ExecutedStep">
+        <Childs>
+          <AbstractStep z:Id="i5" i:type="ExecutedStep">
+            <Childs>
+              <AbstractStep z:Id="i6" i:type="ExecutedStep">
+                <Childs>
+                  <AbstractStep z:Id="i7" i:type="ExecutedStep">
+                    <Childs>
+                      <AbstractStep z:Id="i8" i:type="ExecutedStep">
+                        <Childs />
+                        <Id>bdc9804d-6e68-4102-b3b1-bc716eccf056</Id>
+                        <Parent z:Ref="i7" />
+                        <PropertyValues>
+                          <PropertyValue z:Id="i9">
+                            <PropertyName>TabHeader</PropertyName>
+                            <_dataType>Expression</_dataType>
+                            <_expression>"*"</_expression>
+                            <_screenShotBase64 i:nil="true" />
+                            <_value i:nil="true" />
+                            <_xpathSettings xmlns:d15p1="http://schemas.datacontract.org/2004/07/BR.XPath" i:nil="true" />
+                          </PropertyValue>
+                          <PropertyValue z:Id="i10">
+                            <PropertyName>TabUrl</PropertyName>
+                            <_dataType>Expression</_dataType>
+                            <_expression>"/update/"</_expression>
+                            <_screenShotBase64 i:nil="true" />
+                            <_value i:nil="true" />
+                            <_xpathSettings xmlns:d15p1="http://schemas.datacontract.org/2004/07/BR.XPath" i:nil="true" />
+                          </PropertyValue>
+                          <PropertyValue z:Id="i11">
+                            <PropertyName>Browser</PropertyName>
+                            <_dataType>Expression</_dataType>
+                            <_expression>Google</_expression>
+                            <_screenShotBase64 i:nil="true" />
+                            <_value i:nil="true" />
+                            <_xpathSettings xmlns:d15p1="http://schemas.datacontract.org/2004/07/BR.XPath" i:nil="true" />
+                          </PropertyValue>
+                        </PropertyValues>
+                        <SelectedOptionId>2</SelectedOptionId>
+                        <EnableStatus>true</EnableStatus>
+                        <ExceptionHandlingMode>Default</ExceptionHandlingMode>
+                        <RetryCount>-1</RetryCount>
+                        <Text></Text>
+                        <_activityFullName>Activities.Web.LaunchChrome</_activityFullName>
+                      </AbstractStep>
+                      <AbstractStep z:Id="i12" i:type="ExecutedStep">
+                        <Childs />
+                        <Id>656aa1ad-29cc-442a-9e0e-942cb7b7ad92</Id>
+                        <Parent z:Ref="i7" />
+                        <PropertyValues>
+                          <PropertyValue z:Id="i13">
+                            <PropertyName>Keys</PropertyName>
+                            <_dataType>Expression</_dataType>
+                            <_expression>in_Comment</_expression>
+                            <_screenShotBase64 i:nil="true" />
+                            <_value i:nil="true" />
+                            <_xpathSettings xmlns:d15p1="http://schemas.datacontract.org/2004/07/BR.XPath" i:nil="true" />
+                          </PropertyValue>
+                          <PropertyValue z:Id="i14">
+                            <PropertyName>SearchBy</PropertyName>
+                            <_dataType>Value</_dataType>
+                            <_expression i:nil="true" />
+                            <_screenShotBase64 i:nil="true" />
+                            <_value xmlns:d15p1="http://schemas.datacontract.org/2004/07/Web.Core" i:type="d15p1:ElementSearchBy">XPath</_value>
+                            <_xpathSettings xmlns:d15p1="http://schemas.datacontract.org/2004/07/BR.XPath" i:nil="true" />
+                          </PropertyValue>
+                          <PropertyValue z:Id="i15">
+                            <PropertyName>SearchString</PropertyName>
+                            <_dataType>XPath</_dataType>
+                            <_expression i:nil="true" />
+                            <_screenShotBase64 i:nil="true" />
+                            <_value i:nil="true" />
+                            <_xpathSettings xmlns:d15p1="http://schemas.datacontract.org/2004/07/BR.XPath" z:Id="i16">
+                              <d15p1:Nodes xmlns:d16p1="http://schemas.datacontract.org/2004/07/System.Collections.ObjectModel">
+                                <d16p1:list>
+                                  <d15p1:XPathNode z:Id="i17">
+                                    <d15p1:AttributeOperators xmlns:d19p1="http://schemas.microsoft.com/2003/10/Serialization/Arrays" />
+                                    <d15p1:Attributes>
+                                      <d16p1:list>
+                                        <d15p1:XPathAttribute z:Id="i18">
+                                          <d15p1:IsEnabled>false</d15p1:IsEnabled>
+                                          <d15p1:IsPositionAttribute>true</d15p1:IsPositionAttribute>
+                                          <d15p1:Operator>Equal</d15p1:Operator>
+                                          <d15p1:Value i:nil="true" />
+                                          <d15p1:_isCSharpExpression>false</d15p1:_isCSharpExpression>
+                                          <d15p1:_name></d15p1:_name>
+                                        </d15p1:XPathAttribute>
+                                      </d16p1:list>
+                                    </d15p1:Attributes>
+                                    <d15p1:IsEnabled>false</d15p1:IsEnabled>
+                                    <d15p1:Name>html</d15p1:Name>
+                                  </d15p1:XPathNode>
+                                  <d15p1:XPathNode z:Id="i19">
+                                    <d15p1:AttributeOperators xmlns:d19p1="http://schemas.microsoft.com/2003/10/Serialization/Arrays" />
+                                    <d15p1:Attributes>
+                                      <d16p1:list>
+                                        <d15p1:XPathAttribute z:Id="i20">
+                                          <d15p1:IsEnabled>false</d15p1:IsEnabled>
+                                          <d15p1:IsPositionAttribute>true</d15p1:IsPositionAttribute>
+                                          <d15p1:Operator>Equal</d15p1:Operator>
+                                          <d15p1:Value i:nil="true" />
+                                          <d15p1:_isCSharpExpression>false</d15p1:_isCSharpExpression>
+                                          <d15p1:_name></d15p1:_name>
+                                        </d15p1:XPathAttribute>
+                                      </d16p1:list>
+                                    </d15p1:Attributes>
+                                    <d15p1:IsEnabled>false</d15p1:IsEnabled>
+                                    <d15p1:Name>*</d15p1:Name>
+                                  </d15p1:XPathNode>
+                                  <d15p1:XPathNode z:Id="i21">
+                                    <d15p1:AttributeOperators xmlns:d19p1="http://schemas.microsoft.com/2003/10/Serialization/Arrays" />
+                                    <d15p1:Attributes>
+                                      <d16p1:list>
+                                        <d15p1:XPathAttribute z:Id="i22">
+                                          <d15p1:IsEnabled>false</d15p1:IsEnabled>
+                                          <d15p1:IsPositionAttribute>true</d15p1:IsPositionAttribute>
+                                          <d15p1:Operator>Equal</d15p1:Operator>
+                                          <d15p1:Value i:nil="true" />
+                                          <d15p1:_isCSharpExpression>false</d15p1:_isCSharpExpression>
+                                          <d15p1:_name></d15p1:_name>
+                                        </d15p1:XPathAttribute>
+                                        <d15p1:XPathAttribute z:Id="i23">
+                                          <d15p1:IsEnabled>true</d15p1:IsEnabled>
+                                          <d15p1:IsPositionAttribute>false</d15p1:IsPositionAttribute>
+                                          <d15p1:Operator>Equal</d15p1:Operator>
+                                          <d15p1:Value>'newComment'</d15p1:Value>
+                                          <d15p1:_isCSharpExpression>false</d15p1:_isCSharpExpression>
+                                          <d15p1:_name>id</d15p1:_name>
+                                        </d15p1:XPathAttribute>
+                                      </d16p1:list>
+                                    </d15p1:Attributes>
+                                    <d15p1:IsEnabled>true</d15p1:IsEnabled>
+                                    <d15p1:Name>textarea</d15p1:Name>
+                                  </d15p1:XPathNode>
+                                </d16p1:list>
+                              </d15p1:Nodes>
+                              <d15p1:ScreenShotBase64 i:nil="true" />
+                            </_xpathSettings>
+                          </PropertyValue>
+                          <PropertyValue z:Id="i24">
+                            <PropertyName>Browser</PropertyName>
+                            <_dataType>Expression</_dataType>
+                            <_expression>Google</_expression>
+                            <_screenShotBase64 i:nil="true" />
+                            <_value i:nil="true" />
+                            <_xpathSettings xmlns:d15p1="http://schemas.datacontract.org/2004/07/BR.XPath" i:nil="true" />
+                          </PropertyValue>
+                        </PropertyValues>
+                        <SelectedOptionId>0</SelectedOptionId>
+                        <EnableStatus>true</EnableStatus>
+                        <ExceptionHandlingMode>Default</ExceptionHandlingMode>
+                        <RetryCount>-1</RetryCount>
+                        <Text>Вводит информацию в комментарий</Text>
+                        <_activityFullName>Activities.Web.SendKeysInElement</_activityFullName>
+                      </AbstractStep>
+                      <AbstractStep z:Id="i25" i:type="ExecutedStep">
+                        <Childs />
+                        <Id>7a524182-5038-4558-8b4c-99a2a7d087e6</Id>
+                        <Parent z:Ref="i7" />
+                        <PropertyValues>
+                          <PropertyValue z:Id="i26">
+                            <PropertyName>Browser</PropertyName>
+                            <_dataType>Expression</_dataType>
+                            <_expression>Google</_expression>
+                            <_screenShotBase64 i:nil="true" />
+                            <_value i:nil="true" />
+                            <_xpathSettings xmlns:d15p1="http://schemas.datacontract.org/2004/07/BR.XPath" i:nil="true" />
+                          </PropertyValue>
+                          <PropertyValue z:Id="i27">
+                            <PropertyName>SearchBy</PropertyName>
+                            <_dataType>Value</_dataType>
+                            <_expression i:nil="true" />
+                            <_screenShotBase64 i:nil="true" />
+                            <_value xmlns:d15p1="http://schemas.datacontract.org/2004/07/Web.Core" i:type="d15p1:ElementSearchBy">XPath</_value>
+                            <_xpathSettings xmlns:d15p1="http://schemas.datacontract.org/2004/07/BR.XPath" i:nil="true" />
+                          </PropertyValue>
+                          <PropertyValue z:Id="i28">
+                            <PropertyName>SearchString</PropertyName>
+                            <_dataType>XPath</_dataType>
+                            <_expression i:nil="true" />
+                            <_screenShotBase64 i:nil="true" />
+                            <_value i:nil="true" />
+                            <_xpathSettings xmlns:d15p1="http://schemas.datacontract.org/2004/07/BR.XPath" z:Id="i29">
+                              <d15p1:Nodes xmlns:d16p1="http://schemas.datacontract.org/2004/07/System.Collections.ObjectModel">
+                                <d16p1:list>
+                                  <d15p1:XPathNode z:Id="i30">
+                                    <d15p1:AttributeOperators xmlns:d19p1="http://schemas.microsoft.com/2003/10/Serialization/Arrays" />
+                                    <d15p1:Attributes>
+                                      <d16p1:list>
+                                        <d15p1:XPathAttribute z:Id="i31">
+                                          <d15p1:IsEnabled>false</d15p1:IsEnabled>
+                                          <d15p1:IsPositionAttribute>true</d15p1:IsPositionAttribute>
+                                          <d15p1:Operator>Equal</d15p1:Operator>
+                                          <d15p1:Value i:nil="true" />
+                                          <d15p1:_isCSharpExpression>false</d15p1:_isCSharpExpression>
+                                          <d15p1:_name></d15p1:_name>
+                                        </d15p1:XPathAttribute>
+                                        <d15p1:XPathAttribute z:Id="i32">
+                                          <d15p1:IsEnabled>false</d15p1:IsEnabled>
+                                          <d15p1:IsPositionAttribute>false</d15p1:IsPositionAttribute>
+                                          <d15p1:Operator>Equal</d15p1:Operator>
+                                          <d15p1:Value>'en'</d15p1:Value>
+                                          <d15p1:_isCSharpExpression>false</d15p1:_isCSharpExpression>
+                                          <d15p1:_name>lang</d15p1:_name>
+                                        </d15p1:XPathAttribute>
+                                      </d16p1:list>
+                                    </d15p1:Attributes>
+                                    <d15p1:IsEnabled>false</d15p1:IsEnabled>
+                                    <d15p1:Name>html</d15p1:Name>
+                                  </d15p1:XPathNode>
+                                  <d15p1:XPathNode z:Id="i33">
+                                    <d15p1:AttributeOperators xmlns:d19p1="http://schemas.microsoft.com/2003/10/Serialization/Arrays" />
+                                    <d15p1:Attributes>
+                                      <d16p1:list>
+                                        <d15p1:XPathAttribute z:Id="i34">
+                                          <d15p1:IsEnabled>false</d15p1:IsEnabled>
+                                          <d15p1:IsPositionAttribute>true</d15p1:IsPositionAttribute>
+                                          <d15p1:Operator>Equal</d15p1:Operator>
+                                          <d15p1:Value i:nil="true" />
+                                          <d15p1:_isCSharpExpression>false</d15p1:_isCSharpExpression>
+                                          <d15p1:_name></d15p1:_name>
+                                        </d15p1:XPathAttribute>
+                                      </d16p1:list>
+                                    </d15p1:Attributes>
+                                    <d15p1:IsEnabled>false</d15p1:IsEnabled>
+                                    <d15p1:Name>body</d15p1:Name>
+                                  </d15p1:XPathNode>
+                                  <d15p1:XPathNode z:Id="i35">
+                                    <d15p1:AttributeOperators xmlns:d19p1="http://schemas.microsoft.com/2003/10/Serialization/Arrays" />
+                                    <d15p1:Attributes>
+                                      <d16p1:list>
+                                        <d15p1:XPathAttribute z:Id="i36">
+                                          <d15p1:IsEnabled>true</d15p1:IsEnabled>
+                                          <d15p1:IsPositionAttribute>true</d15p1:IsPositionAttribute>
+                                          <d15p1:Operator>Equal</d15p1:Operator>
+                                          <d15p1:Value>1</d15p1:Value>
+                                          <d15p1:_isCSharpExpression>false</d15p1:_isCSharpExpression>
+                                          <d15p1:_name></d15p1:_name>
+                                        </d15p1:XPathAttribute>
+                                        <d15p1:XPathAttribute z:Id="i37">
+                                          <d15p1:IsEnabled>false</d15p1:IsEnabled>
+                                          <d15p1:IsPositionAttribute>false</d15p1:IsPositionAttribute>
+                                          <d15p1:Operator>Equal</d15p1:Operator>
+                                          <d15p1:Value>'container'</d15p1:Value>
+                                          <d15p1:_isCSharpExpression>false</d15p1:_isCSharpExpression>
+                                          <d15p1:_name>class</d15p1:_name>
+                                        </d15p1:XPathAttribute>
+                                      </d16p1:list>
+                                    </d15p1:Attributes>
+                                    <d15p1:IsEnabled>false</d15p1:IsEnabled>
+                                    <d15p1:Name>div</d15p1:Name>
+                                  </d15p1:XPathNode>
+                                  <d15p1:XPathNode z:Id="i38">
+                                    <d15p1:AttributeOperators xmlns:d19p1="http://schemas.microsoft.com/2003/10/Serialization/Arrays" />
+                                    <d15p1:Attributes>
+                                      <d16p1:list>
+                                        <d15p1:XPathAttribute z:Id="i39">
+                                          <d15p1:IsEnabled>false</d15p1:IsEnabled>
+                                          <d15p1:IsPositionAttribute>true</d15p1:IsPositionAttribute>
+                                          <d15p1:Operator>Equal</d15p1:Operator>
+                                          <d15p1:Value i:nil="true" />
+                                          <d15p1:_isCSharpExpression>false</d15p1:_isCSharpExpression>
+                                          <d15p1:_name></d15p1:_name>
+                                        </d15p1:XPathAttribute>
+                                        <d15p1:XPathAttribute z:Id="i40">
+                                          <d15p1:IsEnabled>false</d15p1:IsEnabled>
+                                          <d15p1:IsPositionAttribute>false</d15p1:IsPositionAttribute>
+                                          <d15p1:Operator>Equal</d15p1:Operator>
+                                          <d15p1:Value>'panel panel-default'</d15p1:Value>
+                                          <d15p1:_isCSharpExpression>false</d15p1:_isCSharpExpression>
+                                          <d15p1:_name>class</d15p1:_name>
+                                        </d15p1:XPathAttribute>
+                                      </d16p1:list>
+                                    </d15p1:Attributes>
+                                    <d15p1:IsEnabled>false</d15p1:IsEnabled>
+                                    <d15p1:Name>div</d15p1:Name>
+                                  </d15p1:XPathNode>
+                                  <d15p1:XPathNode z:Id="i41">
+                                    <d15p1:AttributeOperators xmlns:d19p1="http://schemas.microsoft.com/2003/10/Serialization/Arrays" />
+                                    <d15p1:Attributes>
+                                      <d16p1:list>
+                                        <d15p1:XPathAttribute z:Id="i42">
+                                          <d15p1:IsEnabled>false</d15p1:IsEnabled>
+                                          <d15p1:IsPositionAttribute>true</d15p1:IsPositionAttribute>
+                                          <d15p1:Operator>Equal</d15p1:Operator>
+                                          <d15p1:Value>2</d15p1:Value>
+                                          <d15p1:_isCSharpExpression>false</d15p1:_isCSharpExpression>
+                                          <d15p1:_name></d15p1:_name>
+                                        </d15p1:XPathAttribute>
+                                        <d15p1:XPathAttribute z:Id="i43">
+                                          <d15p1:IsEnabled>false</d15p1:IsEnabled>
+                                          <d15p1:IsPositionAttribute>false</d15p1:IsPositionAttribute>
+                                          <d15p1:Operator>Equal</d15p1:Operator>
+                                          <d15p1:Value>'panel-body'</d15p1:Value>
+                                          <d15p1:_isCSharpExpression>false</d15p1:_isCSharpExpression>
+                                          <d15p1:_name>class</d15p1:_name>
+                                        </d15p1:XPathAttribute>
+                                        <d15p1:XPathAttribute z:Id="i44">
+                                          <d15p1:IsEnabled>true</d15p1:IsEnabled>
+                                          <d15p1:IsPositionAttribute>false</d15p1:IsPositionAttribute>
+                                          <d15p1:Operator>Equal</d15p1:Operator>
+                                          <d15p1:Value>'Comleted'</d15p1:Value>
+                                          <d15p1:_isCSharpExpression>false</d15p1:_isCSharpExpression>
+                                          <d15p1:_name>*</d15p1:_name>
+                                        </d15p1:XPathAttribute>
+                                      </d16p1:list>
+                                    </d15p1:Attributes>
+                                    <d15p1:IsEnabled>false</d15p1:IsEnabled>
+                                    <d15p1:Name>div</d15p1:Name>
+                                  </d15p1:XPathNode>
+                                  <d15p1:XPathNode z:Id="i45">
+                                    <d15p1:AttributeOperators xmlns:d19p1="http://schemas.microsoft.com/2003/10/Serialization/Arrays" />
+                                    <d15p1:Attributes>
+                                      <d16p1:list>
+                                        <d15p1:XPathAttribute z:Id="i46">
+                                          <d15p1:IsEnabled>false</d15p1:IsEnabled>
+                                          <d15p1:IsPositionAttribute>true</d15p1:IsPositionAttribute>
+                                          <d15p1:Operator>Equal</d15p1:Operator>
+                                          <d15p1:Value i:nil="true" />
+                                          <d15p1:_isCSharpExpression>false</d15p1:_isCSharpExpression>
+                                          <d15p1:_name></d15p1:_name>
+                                        </d15p1:XPathAttribute>
+                                        <d15p1:XPathAttribute z:Id="i47">
+                                          <d15p1:IsEnabled>false</d15p1:IsEnabled>
+                                          <d15p1:IsPositionAttribute>false</d15p1:IsPositionAttribute>
+                                          <d15p1:Operator>Equal</d15p1:Operator>
+                                          <d15p1:Value>'container-fluid'</d15p1:Value>
+                                          <d15p1:_isCSharpExpression>false</d15p1:_isCSharpExpression>
+                                          <d15p1:_name>class</d15p1:_name>
+                                        </d15p1:XPathAttribute>
+                                      </d16p1:list>
+                                    </d15p1:Attributes>
+                                    <d15p1:IsEnabled>false</d15p1:IsEnabled>
+                                    <d15p1:Name>div</d15p1:Name>
+                                  </d15p1:XPathNode>
+                                  <d15p1:XPathNode z:Id="i48">
+                                    <d15p1:AttributeOperators xmlns:d19p1="http://schemas.microsoft.com/2003/10/Serialization/Arrays" />
+                                    <d15p1:Attributes>
+                                      <d16p1:list>
+                                        <d15p1:XPathAttribute z:Id="i49">
+                                          <d15p1:IsEnabled>false</d15p1:IsEnabled>
+                                          <d15p1:IsPositionAttribute>true</d15p1:IsPositionAttribute>
+                                          <d15p1:Operator>Equal</d15p1:Operator>
+                                          <d15p1:Value i:nil="true" />
+                                          <d15p1:_isCSharpExpression>false</d15p1:_isCSharpExpression>
+                                          <d15p1:_name></d15p1:_name>
+                                        </d15p1:XPathAttribute>
+                                        <d15p1:XPathAttribute z:Id="i50">
+                                          <d15p1:IsEnabled>false</d15p1:IsEnabled>
+                                          <d15p1:IsPositionAttribute>false</d15p1:IsPositionAttribute>
+                                          <d15p1:Operator>Equal</d15p1:Operator>
+                                          <d15p1:Value>'row'</d15p1:Value>
+                                          <d15p1:_isCSharpExpression>false</d15p1:_isCSharpExpression>
+                                          <d15p1:_name>class</d15p1:_name>
+                                        </d15p1:XPathAttribute>
+                                      </d16p1:list>
+                                    </d15p1:Attributes>
+                                    <d15p1:IsEnabled>false</d15p1:IsEnabled>
+                                    <d15p1:Name>div</d15p1:Name>
+                                  </d15p1:XPathNode>
+                                  <d15p1:XPathNode z:Id="i51">
+                                    <d15p1:AttributeOperators xmlns:d19p1="http://schemas.microsoft.com/2003/10/Serialization/Arrays" />
+                                    <d15p1:Attributes>
+                                      <d16p1:list>
+                                        <d15p1:XPathAttribute z:Id="i52">
+                                          <d15p1:IsEnabled>false</d15p1:IsEnabled>
+                                          <d15p1:IsPositionAttribute>true</d15p1:IsPositionAttribute>
+                                          <d15p1:Operator>Equal</d15p1:Operator>
+                                          <d15p1:Value i:nil="true" />
+                                          <d15p1:_isCSharpExpression>false</d15p1:_isCSharpExpression>
+                                          <d15p1:_name></d15p1:_name>
+                                        </d15p1:XPathAttribute>
+                                        <d15p1:XPathAttribute z:Id="i53">
+                                          <d15p1:IsEnabled>false</d15p1:IsEnabled>
+                                          <d15p1:IsPositionAttribute>false</d15p1:IsPositionAttribute>
+                                          <d15p1:Operator>Equal</d15p1:Operator>
+                                          <d15p1:Value>'col-lg-12'</d15p1:Value>
+                                          <d15p1:_isCSharpExpression>false</d15p1:_isCSharpExpression>
+                                          <d15p1:_name>class</d15p1:_name>
+                                        </d15p1:XPathAttribute>
+                                      </d16p1:list>
+                                    </d15p1:Attributes>
+                                    <d15p1:IsEnabled>false</d15p1:IsEnabled>
+                                    <d15p1:Name>div</d15p1:Name>
+                                  </d15p1:XPathNode>
+                                  <d15p1:XPathNode z:Id="i54">
+                                    <d15p1:AttributeOperators xmlns:d19p1="http://schemas.microsoft.com/2003/10/Serialization/Arrays">
+                                      <d19p1:string>and</d19p1:string>
+                                      <d19p1:string>and</d19p1:string>
+                                    </d15p1:AttributeOperators>
+                                    <d15p1:Attributes>
+                                      <d16p1:list>
+                                        <d15p1:XPathAttribute z:Id="i55">
+                                          <d15p1:IsEnabled>false</d15p1:IsEnabled>
+                                          <d15p1:IsPositionAttribute>true</d15p1:IsPositionAttribute>
+                                          <d15p1:Operator>Equal</d15p1:Operator>
+                                          <d15p1:Value i:nil="true" />
+                                          <d15p1:_isCSharpExpression>false</d15p1:_isCSharpExpression>
+                                          <d15p1:_name></d15p1:_name>
+                                        </d15p1:XPathAttribute>
+                                        <d15p1:XPathAttribute z:Id="i56">
+                                          <d15p1:IsEnabled>false</d15p1:IsEnabled>
+                                          <d15p1:IsPositionAttribute>false</d15p1:IsPositionAttribute>
+                                          <d15p1:Operator>Equal</d15p1:Operator>
+                                          <d15p1:Value>'loginForm'</d15p1:Value>
+                                          <d15p1:_isCSharpExpression>false</d15p1:_isCSharpExpression>
+                                          <d15p1:_name>name</d15p1:_name>
+                                        </d15p1:XPathAttribute>
+                                        <d15p1:XPathAttribute z:Id="i57">
+                                          <d15p1:IsEnabled>false</d15p1:IsEnabled>
+                                          <d15p1:IsPositionAttribute>false</d15p1:IsPositionAttribute>
+                                          <d15p1:Operator>Equal</d15p1:Operator>
+                                          <d15p1:Value>'loginForm'</d15p1:Value>
+                                          <d15p1:_isCSharpExpression>false</d15p1:_isCSharpExpression>
+                                          <d15p1:_name>id</d15p1:_name>
+                                        </d15p1:XPathAttribute>
+                                        <d15p1:XPathAttribute z:Id="i58">
+                                          <d15p1:IsEnabled>false</d15p1:IsEnabled>
+                                          <d15p1:IsPositionAttribute>false</d15p1:IsPositionAttribute>
+                                          <d15p1:Operator>Equal</d15p1:Operator>
+                                          <d15p1:Value>''</d15p1:Value>
+                                          <d15p1:_isCSharpExpression>false</d15p1:_isCSharpExpression>
+                                          <d15p1:_name>novalidate</d15p1:_name>
+                                        </d15p1:XPathAttribute>
+                                      </d16p1:list>
+                                    </d15p1:Attributes>
+                                    <d15p1:IsEnabled>false</d15p1:IsEnabled>
+                                    <d15p1:Name>form</d15p1:Name>
+                                  </d15p1:XPathNode>
+                                  <d15p1:XPathNode z:Id="i59">
+                                    <d15p1:AttributeOperators xmlns:d19p1="http://schemas.microsoft.com/2003/10/Serialization/Arrays" />
+                                    <d15p1:Attributes>
+                                      <d16p1:list>
+                                        <d15p1:XPathAttribute z:Id="i60">
+                                          <d15p1:IsEnabled>true</d15p1:IsEnabled>
+                                          <d15p1:IsPositionAttribute>true</d15p1:IsPositionAttribute>
+                                          <d15p1:Operator>Equal</d15p1:Operator>
+                                          <d15p1:Value>2</d15p1:Value>
+                                          <d15p1:_isCSharpExpression>false</d15p1:_isCSharpExpression>
+                                          <d15p1:_name></d15p1:_name>
+                                        </d15p1:XPathAttribute>
+                                        <d15p1:XPathAttribute z:Id="i61">
+                                          <d15p1:IsEnabled>false</d15p1:IsEnabled>
+                                          <d15p1:IsPositionAttribute>false</d15p1:IsPositionAttribute>
+                                          <d15p1:Operator>Equal</d15p1:Operator>
+                                          <d15p1:Value>'control-group form-group'</d15p1:Value>
+                                          <d15p1:_isCSharpExpression>false</d15p1:_isCSharpExpression>
+                                          <d15p1:_name>class</d15p1:_name>
+                                        </d15p1:XPathAttribute>
+                                      </d16p1:list>
+                                    </d15p1:Attributes>
+                                    <d15p1:IsEnabled>false</d15p1:IsEnabled>
+                                    <d15p1:Name>div</d15p1:Name>
+                                  </d15p1:XPathNode>
+                                  <d15p1:XPathNode z:Id="i62">
+                                    <d15p1:AttributeOperators xmlns:d19p1="http://schemas.microsoft.com/2003/10/Serialization/Arrays" />
+                                    <d15p1:Attributes>
+                                      <d16p1:list>
+                                        <d15p1:XPathAttribute z:Id="i63">
+                                          <d15p1:IsEnabled>false</d15p1:IsEnabled>
+                                          <d15p1:IsPositionAttribute>true</d15p1:IsPositionAttribute>
+                                          <d15p1:Operator>Equal</d15p1:Operator>
+                                          <d15p1:Value i:nil="true" />
+                                          <d15p1:_isCSharpExpression>false</d15p1:_isCSharpExpression>
+                                          <d15p1:_name></d15p1:_name>
+                                        </d15p1:XPathAttribute>
+                                        <d15p1:XPathAttribute z:Id="i64">
+                                          <d15p1:IsEnabled>false</d15p1:IsEnabled>
+                                          <d15p1:IsPositionAttribute>false</d15p1:IsPositionAttribute>
+                                          <d15p1:Operator>Equal</d15p1:Operator>
+                                          <d15p1:Value>'controls'</d15p1:Value>
+                                          <d15p1:_isCSharpExpression>false</d15p1:_isCSharpExpression>
+                                          <d15p1:_name>class</d15p1:_name>
+                                        </d15p1:XPathAttribute>
+                                      </d16p1:list>
+                                    </d15p1:Attributes>
+                                    <d15p1:IsEnabled>false</d15p1:IsEnabled>
+                                    <d15p1:Name>div</d15p1:Name>
+                                  </d15p1:XPathNode>
+                                  <d15p1:XPathNode z:Id="i65">
+                                    <d15p1:AttributeOperators xmlns:d19p1="http://schemas.microsoft.com/2003/10/Serialization/Arrays" />
+                                    <d15p1:Attributes>
+                                      <d16p1:list>
+                                        <d15p1:XPathAttribute z:Id="i66">
+                                          <d15p1:IsEnabled>false</d15p1:IsEnabled>
+                                          <d15p1:IsPositionAttribute>true</d15p1:IsPositionAttribute>
+                                          <d15p1:Operator>Equal</d15p1:Operator>
+                                          <d15p1:Value i:nil="true" />
+                                          <d15p1:_isCSharpExpression>false</d15p1:_isCSharpExpression>
+                                          <d15p1:_name></d15p1:_name>
+                                        </d15p1:XPathAttribute>
+                                        <d15p1:XPathAttribute z:Id="i67">
+                                          <d15p1:IsEnabled>false</d15p1:IsEnabled>
+                                          <d15p1:IsPositionAttribute>false</d15p1:IsPositionAttribute>
+                                          <d15p1:Operator>Equal</d15p1:Operator>
+                                          <d15p1:Value>'btn-group bootstrap-select open'</d15p1:Value>
+                                          <d15p1:_isCSharpExpression>false</d15p1:_isCSharpExpression>
+                                          <d15p1:_name>class</d15p1:_name>
+                                        </d15p1:XPathAttribute>
+                                      </d16p1:list>
+                                    </d15p1:Attributes>
+                                    <d15p1:IsEnabled>false</d15p1:IsEnabled>
+                                    <d15p1:Name>div</d15p1:Name>
+                                  </d15p1:XPathNode>
+                                  <d15p1:XPathNode z:Id="i68">
+                                    <d15p1:AttributeOperators xmlns:d19p1="http://schemas.microsoft.com/2003/10/Serialization/Arrays">
+                                      <d19p1:string>and</d19p1:string>
+                                      <d19p1:string>and</d19p1:string>
+                                    </d15p1:AttributeOperators>
+                                    <d15p1:Attributes>
+                                      <d16p1:list>
+                                        <d15p1:XPathAttribute z:Id="i69">
+                                          <d15p1:IsEnabled>false</d15p1:IsEnabled>
+                                          <d15p1:IsPositionAttribute>true</d15p1:IsPositionAttribute>
+                                          <d15p1:Operator>Equal</d15p1:Operator>
+                                          <d15p1:Value i:nil="true" />
+                                          <d15p1:_isCSharpExpression>false</d15p1:_isCSharpExpression>
+                                          <d15p1:_name></d15p1:_name>
+                                        </d15p1:XPathAttribute>
+                                        <d15p1:XPathAttribute z:Id="i70">
+                                          <d15p1:IsEnabled>false</d15p1:IsEnabled>
+                                          <d15p1:IsPositionAttribute>false</d15p1:IsPositionAttribute>
+                                          <d15p1:Operator>Equal</d15p1:Operator>
+                                          <d15p1:Value>'dropdown-menu open'</d15p1:Value>
+                                          <d15p1:_isCSharpExpression>false</d15p1:_isCSharpExpression>
+                                          <d15p1:_name>class</d15p1:_name>
+                                        </d15p1:XPathAttribute>
+                                        <d15p1:XPathAttribute z:Id="i71">
+                                          <d15p1:IsEnabled>false</d15p1:IsEnabled>
+                                          <d15p1:IsPositionAttribute>false</d15p1:IsPositionAttribute>
+                                          <d15p1:Operator>Equal</d15p1:Operator>
+                                          <d15p1:Value>'combobox'</d15p1:Value>
+                                          <d15p1:_isCSharpExpression>false</d15p1:_isCSharpExpression>
+                                          <d15p1:_name>role</d15p1:_name>
+                                        </d15p1:XPathAttribute>
+                                        <d15p1:XPathAttribute z:Id="i72">
+                                          <d15p1:IsEnabled>false</d15p1:IsEnabled>
+                                          <d15p1:IsPositionAttribute>false</d15p1:IsPositionAttribute>
+                                          <d15p1:Operator>Equal</d15p1:Operator>
+                                          <d15p1:Value>'max-height: 173.203px; overflow: hidden; min-height: 92px;'</d15p1:Value>
+                                          <d15p1:_isCSharpExpression>false</d15p1:_isCSharpExpression>
+                                          <d15p1:_name>style</d15p1:_name>
+                                        </d15p1:XPathAttribute>
+                                      </d16p1:list>
+                                    </d15p1:Attributes>
+                                    <d15p1:IsEnabled>false</d15p1:IsEnabled>
+                                    <d15p1:Name>div</d15p1:Name>
+                                  </d15p1:XPathNode>
+                                  <d15p1:XPathNode z:Id="i73">
+                                    <d15p1:AttributeOperators xmlns:d19p1="http://schemas.microsoft.com/2003/10/Serialization/Arrays">
+                                      <d19p1:string>and</d19p1:string>
+                                      <d19p1:string>and</d19p1:string>
+                                      <d19p1:string>and</d19p1:string>
+                                    </d15p1:AttributeOperators>
+                                    <d15p1:Attributes>
+                                      <d16p1:list>
+                                        <d15p1:XPathAttribute z:Id="i74">
+                                          <d15p1:IsEnabled>false</d15p1:IsEnabled>
+                                          <d15p1:IsPositionAttribute>true</d15p1:IsPositionAttribute>
+                                          <d15p1:Operator>Equal</d15p1:Operator>
+                                          <d15p1:Value i:nil="true" />
+                                          <d15p1:_isCSharpExpression>false</d15p1:_isCSharpExpression>
+                                          <d15p1:_name></d15p1:_name>
+                                        </d15p1:XPathAttribute>
+                                        <d15p1:XPathAttribute z:Id="i75">
+                                          <d15p1:IsEnabled>false</d15p1:IsEnabled>
+                                          <d15p1:IsPositionAttribute>false</d15p1:IsPositionAttribute>
+                                          <d15p1:Operator>Equal</d15p1:Operator>
+                                          <d15p1:Value>'dropdown-menu inner'</d15p1:Value>
+                                          <d15p1:_isCSharpExpression>false</d15p1:_isCSharpExpression>
+                                          <d15p1:_name>class</d15p1:_name>
+                                        </d15p1:XPathAttribute>
+                                        <d15p1:XPathAttribute z:Id="i76">
+                                          <d15p1:IsEnabled>false</d15p1:IsEnabled>
+                                          <d15p1:IsPositionAttribute>false</d15p1:IsPositionAttribute>
+                                          <d15p1:Operator>Equal</d15p1:Operator>
+                                          <d15p1:Value>'listbox'</d15p1:Value>
+                                          <d15p1:_isCSharpExpression>false</d15p1:_isCSharpExpression>
+                                          <d15p1:_name>role</d15p1:_name>
+                                        </d15p1:XPathAttribute>
+                                        <d15p1:XPathAttribute z:Id="i77">
+                                          <d15p1:IsEnabled>false</d15p1:IsEnabled>
+                                          <d15p1:IsPositionAttribute>false</d15p1:IsPositionAttribute>
+                                          <d15p1:Operator>Equal</d15p1:Operator>
+                                          <d15p1:Value>'true'</d15p1:Value>
+                                          <d15p1:_isCSharpExpression>false</d15p1:_isCSharpExpression>
+                                          <d15p1:_name>aria-expanded</d15p1:_name>
+                                        </d15p1:XPathAttribute>
+                                        <d15p1:XPathAttribute z:Id="i78">
+                                          <d15p1:IsEnabled>false</d15p1:IsEnabled>
+                                          <d15p1:IsPositionAttribute>false</d15p1:IsPositionAttribute>
+                                          <d15p1:Operator>Equal</d15p1:Operator>
+                                          <d15p1:Value>'max-height: 161.203px; overflow-y: auto; min-height: 80px;'</d15p1:Value>
+                                          <d15p1:_isCSharpExpression>false</d15p1:_isCSharpExpression>
+                                          <d15p1:_name>style</d15p1:_name>
+                                        </d15p1:XPathAttribute>
+                                      </d16p1:list>
+                                    </d15p1:Attributes>
+                                    <d15p1:IsEnabled>false</d15p1:IsEnabled>
+                                    <d15p1:Name>ul</d15p1:Name>
+                                  </d15p1:XPathNode>
+                                  <d15p1:XPathNode z:Id="i79">
+                                    <d15p1:AttributeOperators xmlns:d19p1="http://schemas.microsoft.com/2003/10/Serialization/Arrays" />
+                                    <d15p1:Attributes>
+                                      <d16p1:list>
+                                        <d15p1:XPathAttribute z:Id="i80">
+                                          <d15p1:IsEnabled>false</d15p1:IsEnabled>
+                                          <d15p1:IsPositionAttribute>true</d15p1:IsPositionAttribute>
+                                          <d15p1:Operator>Equal</d15p1:Operator>
+                                          <d15p1:Value>4</d15p1:Value>
+                                          <d15p1:_isCSharpExpression>false</d15p1:_isCSharpExpression>
+                                          <d15p1:_name></d15p1:_name>
+                                        </d15p1:XPathAttribute>
+                                        <d15p1:XPathAttribute z:Id="i81">
+                                          <d15p1:IsEnabled>false</d15p1:IsEnabled>
+                                          <d15p1:IsPositionAttribute>false</d15p1:IsPositionAttribute>
+                                          <d15p1:Operator>Equal</d15p1:Operator>
+                                          <d15p1:Value>'3'</d15p1:Value>
+                                          <d15p1:_isCSharpExpression>false</d15p1:_isCSharpExpression>
+                                          <d15p1:_name>data-original-index</d15p1:_name>
+                                        </d15p1:XPathAttribute>
+                                        <d15p1:XPathAttribute z:Id="i82">
+                                          <d15p1:IsEnabled>true</d15p1:IsEnabled>
+                                          <d15p1:IsPositionAttribute>false</d15p1:IsPositionAttribute>
+                                          <d15p1:Operator>Equal</d15p1:Operator>
+                                          <d15p1:Value>'Completed'</d15p1:Value>
+                                          <d15p1:_isCSharpExpression>false</d15p1:_isCSharpExpression>
+                                          <d15p1:_name>*</d15p1:_name>
+                                        </d15p1:XPathAttribute>
+                                      </d16p1:list>
+                                    </d15p1:Attributes>
+                                    <d15p1:IsEnabled>true</d15p1:IsEnabled>
+                                    <d15p1:Name>li</d15p1:Name>
+                                  </d15p1:XPathNode>
+                                  <d15p1:XPathNode z:Id="i83">
+                                    <d15p1:AttributeOperators xmlns:d19p1="http://schemas.microsoft.com/2003/10/Serialization/Arrays">
+                                      <d19p1:string>and</d19p1:string>
+                                      <d19p1:string>and</d19p1:string>
+                                      <d19p1:string>and</d19p1:string>
+                                      <d19p1:string>and</d19p1:string>
+                                      <d19p1:string>and</d19p1:string>
+                                    </d15p1:AttributeOperators>
+                                    <d15p1:Attributes>
+                                      <d16p1:list>
+                                        <d15p1:XPathAttribute z:Id="i84">
+                                          <d15p1:IsEnabled>false</d15p1:IsEnabled>
+                                          <d15p1:IsPositionAttribute>true</d15p1:IsPositionAttribute>
+                                          <d15p1:Operator>Equal</d15p1:Operator>
+                                          <d15p1:Value i:nil="true" />
+                                          <d15p1:_isCSharpExpression>false</d15p1:_isCSharpExpression>
+                                          <d15p1:_name></d15p1:_name>
+                                        </d15p1:XPathAttribute>
+                                        <d15p1:XPathAttribute z:Id="i85">
+                                          <d15p1:IsEnabled>false</d15p1:IsEnabled>
+                                          <d15p1:IsPositionAttribute>false</d15p1:IsPositionAttribute>
+                                          <d15p1:Operator>Equal</d15p1:Operator>
+                                          <d15p1:Value>'0'</d15p1:Value>
+                                          <d15p1:_isCSharpExpression>false</d15p1:_isCSharpExpression>
+                                          <d15p1:_name>tabindex</d15p1:_name>
+                                        </d15p1:XPathAttribute>
+                                        <d15p1:XPathAttribute z:Id="i86">
+                                          <d15p1:IsEnabled>false</d15p1:IsEnabled>
+                                          <d15p1:IsPositionAttribute>false</d15p1:IsPositionAttribute>
+                                          <d15p1:Operator>Equal</d15p1:Operator>
+                                          <d15p1:Value>''</d15p1:Value>
+                                          <d15p1:_isCSharpExpression>false</d15p1:_isCSharpExpression>
+                                          <d15p1:_name>class</d15p1:_name>
+                                        </d15p1:XPathAttribute>
+                                        <d15p1:XPathAttribute z:Id="i87">
+                                          <d15p1:IsEnabled>false</d15p1:IsEnabled>
+                                          <d15p1:IsPositionAttribute>false</d15p1:IsPositionAttribute>
+                                          <d15p1:Operator>Equal</d15p1:Operator>
+                                          <d15p1:Value>'null'</d15p1:Value>
+                                          <d15p1:_isCSharpExpression>false</d15p1:_isCSharpExpression>
+                                          <d15p1:_name>data-tokens</d15p1:_name>
+                                        </d15p1:XPathAttribute>
+                                        <d15p1:XPathAttribute z:Id="i88">
+                                          <d15p1:IsEnabled>false</d15p1:IsEnabled>
+                                          <d15p1:IsPositionAttribute>false</d15p1:IsPositionAttribute>
+                                          <d15p1:Operator>Equal</d15p1:Operator>
+                                          <d15p1:Value>'option'</d15p1:Value>
+                                          <d15p1:_isCSharpExpression>false</d15p1:_isCSharpExpression>
+                                          <d15p1:_name>role</d15p1:_name>
+                                        </d15p1:XPathAttribute>
+                                        <d15p1:XPathAttribute z:Id="i89">
+                                          <d15p1:IsEnabled>false</d15p1:IsEnabled>
+                                          <d15p1:IsPositionAttribute>false</d15p1:IsPositionAttribute>
+                                          <d15p1:Operator>Equal</d15p1:Operator>
+                                          <d15p1:Value>'false'</d15p1:Value>
+                                          <d15p1:_isCSharpExpression>false</d15p1:_isCSharpExpression>
+                                          <d15p1:_name>aria-disabled</d15p1:_name>
+                                        </d15p1:XPathAttribute>
+                                        <d15p1:XPathAttribute z:Id="i90">
+                                          <d15p1:IsEnabled>false</d15p1:IsEnabled>
+                                          <d15p1:IsPositionAttribute>false</d15p1:IsPositionAttribute>
+                                          <d15p1:Operator>Equal</d15p1:Operator>
+                                          <d15p1:Value>'false'</d15p1:Value>
+                                          <d15p1:_isCSharpExpression>false</d15p1:_isCSharpExpression>
+                                          <d15p1:_name>aria-selected</d15p1:_name>
+                                        </d15p1:XPathAttribute>
+                                      </d16p1:list>
+                                    </d15p1:Attributes>
+                                    <d15p1:IsEnabled>true</d15p1:IsEnabled>
+                                    <d15p1:Name>a</d15p1:Name>
+                                  </d15p1:XPathNode>
+                                  <d15p1:XPathNode z:Id="i91">
+                                    <d15p1:AttributeOperators xmlns:d19p1="http://schemas.microsoft.com/2003/10/Serialization/Arrays" />
+                                    <d15p1:Attributes>
+                                      <d16p1:list>
+                                        <d15p1:XPathAttribute z:Id="i92">
+                                          <d15p1:IsEnabled>false</d15p1:IsEnabled>
+                                          <d15p1:IsPositionAttribute>true</d15p1:IsPositionAttribute>
+                                          <d15p1:Operator>Equal</d15p1:Operator>
+                                          <d15p1:Value>1</d15p1:Value>
+                                          <d15p1:_isCSharpExpression>false</d15p1:_isCSharpExpression>
+                                          <d15p1:_name></d15p1:_name>
+                                        </d15p1:XPathAttribute>
+                                        <d15p1:XPathAttribute z:Id="i93">
+                                          <d15p1:IsEnabled>false</d15p1:IsEnabled>
+                                          <d15p1:IsPositionAttribute>false</d15p1:IsPositionAttribute>
+                                          <d15p1:Operator>Equal</d15p1:Operator>
+                                          <d15p1:Value>'text'</d15p1:Value>
+                                          <d15p1:_isCSharpExpression>false</d15p1:_isCSharpExpression>
+                                          <d15p1:_name>class</d15p1:_name>
+                                        </d15p1:XPathAttribute>
+                                      </d16p1:list>
+                                    </d15p1:Attributes>
+                                    <d15p1:IsEnabled>true</d15p1:IsEnabled>
+                                    <d15p1:Name>span</d15p1:Name>
+                                  </d15p1:XPathNode>
+                                </d16p1:list>
+                              </d15p1:Nodes>
+                              <d15p1:ScreenShotBase64>/9j/4AAQSkZJRgABAQEAYABgAAD/2wBDAAgGBgcGBQgHBwcJCQgKDBQNDAsLDBkSEw8UHRofHh0aHBwgJC4nICIsIxwcKDcpLDAxNDQ0Hyc5PTgyPC4zNDL/2wBDAQkJCQwLDBgNDRgyIRwhMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjL/wAARCAAeAE0DASIAAhEBAxEB/8QAHwAAAQUBAQEBAQEAAAAAAAAAAAECAwQFBgcICQoL/8QAtRAAAgEDAwIEAwUFBAQAAAF9AQIDAAQRBRIhMUEGE1FhByJxFDKBkaEII0KxwRVS0fAkM2JyggkKFhcYGRolJicoKSo0NTY3ODk6Q0RFRkdISUpTVFVWV1hZWmNkZWZnaGlqc3R1dnd4eXqDhIWGh4iJipKTlJWWl5iZmqKjpKWmp6ipqrKztLW2t7i5usLDxMXGx8jJytLT1NXW19jZ2uHi4+Tl5ufo6erx8vP09fb3+Pn6/8QAHwEAAwEBAQEBAQEBAQAAAAAAAAECAwQFBgcICQoL/8QAtREAAgECBAQDBAcFBAQAAQJ3AAECAxEEBSExBhJBUQdhcRMiMoEIFEKRobHBCSMzUvAVYnLRChYkNOEl8RcYGRomJygpKjU2Nzg5OkNERUZHSElKU1RVVldYWVpjZGVmZ2hpanN0dXZ3eHl6goOEhYaHiImKkpOUlZaXmJmaoqOkpaanqKmqsrO0tba3uLm6wsPExcbHyMnK0tPU1dbX2Nna4uPk5ebn6Onq8vP09fb3+Pn6/9oADAMBAAIRAxEAPwD3+iis3XdRk0zSzNAqNPJLHBFvBKh5HCAnHYFs9R0oA0qKxorPVbC5ink1hry1w32lLqONdgxkNGY0HfqGzweuRzBZeI7i4ksJLjThBY6jkWcom3OflLr5ibRsyoJGC3ocUAdBRXJ2fivVL6PTXh0OLGpRF7Yte/dKgE+ZhPlGM4K7ieMgZ4nh8TX169rBZaTG9zNDLJIJbrZHE0cnlsu4ISec4IXn2oB6HS0VyD+MY4phfyl47Aac0zwPsDCUTCPBY8A5+XrjvVe58aT3Olaklg2lvqFvAJkaz1AXEYTdg5by+GHoVwcjB64Frt/X9WE3b+vT/M7eiuS1TxxBpd3NbSf2aJbRFa6jm1JYnyVDFYlZf3hwep2AkgZ64vprl/qNzcLo2n2txb27KjzXV20G5yofCgRvkAMvJxzkY4oGb1VNS0+HVLCS0mLqr4IdCAyMCCrDPcEA/hVuigDFi0rVJp4W1TV0nhhBxDa2xgEpII/eEu24YJ4G0Z5OcDENl4cuLeSwjuNRE9jp2TZxCHa4+UovmPuO/CkgYC+pzXQUUAYmm+H/AOz7fRovtXmf2bE0efLx5mQBnrx096yhouqWXiC2TT7tYwttcs081oZIiZJw4UgMvIzx83Y8V2FFHW4PU5k+DLcwrF9rk2i0MG7aN/meYJfNz0zvGcYxVqbSNTv9LvLTUdVhkaeLy0MFp5aIf7xBdixz/tAY7d63KKAME6LqcV3PcWeqwW7XiobvNmXzIqhS8WX+QkAcNvHA685edI1K1vLmbStStYY7pxLKl1aNMfM2hSylZEwCFXjB5ye9bdFAH//Z</d15p1:ScreenShotBase64>
+                            </_xpathSettings>
+                          </PropertyValue>
+                        </PropertyValues>
+                        <SelectedOptionId>0</SelectedOptionId>
+                        <EnableStatus>true</EnableStatus>
+                        <ExceptionHandlingMode>Default</ExceptionHandlingMode>
+                        <RetryCount>-1</RetryCount>
+                        <Text></Text>
+                        <_activityFullName>Activities.Web.ClickElement</_activityFullName>
+                      </AbstractStep>
+                      <AbstractStep z:Id="i94" i:type="ExecutedStep">
+                        <Childs />
+                        <Id>22c7032e-7f85-4a4e-8552-c4e848dc84cd</Id>
+                        <Parent z:Ref="i7" />
+                        <PropertyValues>
+                          <PropertyValue z:Id="i95">
+                            <PropertyName>Browser</PropertyName>
+                            <_dataType>Expression</_dataType>
+                            <_expression>Google</_expression>
+                            <_screenShotBase64 i:nil="true" />
+                            <_value i:nil="true" />
+                            <_xpathSettings xmlns:d15p1="http://schemas.datacontract.org/2004/07/BR.XPath" i:nil="true" />
+                          </PropertyValue>
+                          <PropertyValue z:Id="i96">
+                            <PropertyName>SearchBy</PropertyName>
+                            <_dataType>Value</_dataType>
+                            <_expression i:nil="true" />
+                            <_screenShotBase64 i:nil="true" />
+                            <_value xmlns:d15p1="http://schemas.datacontract.org/2004/07/Web.Core" i:type="d15p1:ElementSearchBy">XPath</_value>
+                            <_xpathSettings xmlns:d15p1="http://schemas.datacontract.org/2004/07/BR.XPath" i:nil="true" />
+                          </PropertyValue>
+                          <PropertyValue z:Id="i97">
+                            <PropertyName>SearchString</PropertyName>
+                            <_dataType>XPath</_dataType>
+                            <_expression i:nil="true" />
+                            <_screenShotBase64 i:nil="true" />
+                            <_value i:nil="true" />
+                            <_xpathSettings xmlns:d15p1="http://schemas.datacontract.org/2004/07/BR.XPath" z:Id="i98">
+                              <d15p1:Nodes xmlns:d16p1="http://schemas.datacontract.org/2004/07/System.Collections.ObjectModel">
+                                <d16p1:list>
+                                  <d15p1:XPathNode z:Id="i99">
+                                    <d15p1:AttributeOperators xmlns:d19p1="http://schemas.microsoft.com/2003/10/Serialization/Arrays" />
+                                    <d15p1:Attributes>
+                                      <d16p1:list>
+                                        <d15p1:XPathAttribute z:Id="i100">
+                                          <d15p1:IsEnabled>false</d15p1:IsEnabled>
+                                          <d15p1:IsPositionAttribute>true</d15p1:IsPositionAttribute>
+                                          <d15p1:Operator>Equal</d15p1:Operator>
+                                          <d15p1:Value i:nil="true" />
+                                          <d15p1:_isCSharpExpression>false</d15p1:_isCSharpExpression>
+                                          <d15p1:_name></d15p1:_name>
+                                        </d15p1:XPathAttribute>
+                                      </d16p1:list>
+                                    </d15p1:Attributes>
+                                    <d15p1:IsEnabled>false</d15p1:IsEnabled>
+                                    <d15p1:Name>html</d15p1:Name>
+                                  </d15p1:XPathNode>
+                                  <d15p1:XPathNode z:Id="i101">
+                                    <d15p1:AttributeOperators xmlns:d19p1="http://schemas.microsoft.com/2003/10/Serialization/Arrays" />
+                                    <d15p1:Attributes>
+                                      <d16p1:list>
+                                        <d15p1:XPathAttribute z:Id="i102">
+                                          <d15p1:IsEnabled>false</d15p1:IsEnabled>
+                                          <d15p1:IsPositionAttribute>true</d15p1:IsPositionAttribute>
+                                          <d15p1:Operator>Equal</d15p1:Operator>
+                                          <d15p1:Value i:nil="true" />
+                                          <d15p1:_isCSharpExpression>false</d15p1:_isCSharpExpression>
+                                          <d15p1:_name></d15p1:_name>
+                                        </d15p1:XPathAttribute>
+                                      </d16p1:list>
+                                    </d15p1:Attributes>
+                                    <d15p1:IsEnabled>false</d15p1:IsEnabled>
+                                    <d15p1:Name>*</d15p1:Name>
+                                  </d15p1:XPathNode>
+                                  <d15p1:XPathNode z:Id="i103">
+                                    <d15p1:AttributeOperators xmlns:d19p1="http://schemas.microsoft.com/2003/10/Serialization/Arrays" />
+                                    <d15p1:Attributes>
+                                      <d16p1:list>
+                                        <d15p1:XPathAttribute z:Id="i104">
+                                          <d15p1:IsEnabled>false</d15p1:IsEnabled>
+                                          <d15p1:IsPositionAttribute>true</d15p1:IsPositionAttribute>
+                                          <d15p1:Operator>Equal</d15p1:Operator>
+                                          <d15p1:Value i:nil="true" />
+                                          <d15p1:_isCSharpExpression>false</d15p1:_isCSharpExpression>
+                                          <d15p1:_name></d15p1:_name>
+                                        </d15p1:XPathAttribute>
+                                        <d15p1:XPathAttribute z:Id="i105">
+                                          <d15p1:IsEnabled>true</d15p1:IsEnabled>
+                                          <d15p1:IsPositionAttribute>false</d15p1:IsPositionAttribute>
+                                          <d15p1:Operator>Equal</d15p1:Operator>
+                                          <d15p1:Value>'buttonUpdate'</d15p1:Value>
+                                          <d15p1:_isCSharpExpression>false</d15p1:_isCSharpExpression>
+                                          <d15p1:_name>id</d15p1:_name>
+                                        </d15p1:XPathAttribute>
+                                      </d16p1:list>
+                                    </d15p1:Attributes>
+                                    <d15p1:IsEnabled>true</d15p1:IsEnabled>
+                                    <d15p1:Name>button</d15p1:Name>
+                                  </d15p1:XPathNode>
+                                </d16p1:list>
+                              </d15p1:Nodes>
+                              <d15p1:ScreenShotBase64 i:nil="true" />
+                            </_xpathSettings>
+                          </PropertyValue>
+                        </PropertyValues>
+                        <SelectedOptionId>0</SelectedOptionId>
+                        <EnableStatus>true</EnableStatus>
+                        <ExceptionHandlingMode>Default</ExceptionHandlingMode>
+                        <RetryCount>-1</RetryCount>
+                        <Text>Нажимет кнопку Обновить</Text>
+                        <_activityFullName>Activities.Web.ClickElement</_activityFullName>
+                      </AbstractStep>
+                      <AbstractStep z:Id="i106" i:type="ExecutedStep">
+                        <Childs />
+                        <Id>fa399690-9a3b-4bab-9d38-0fbed34fab66</Id>
+                        <Parent z:Ref="i7" />
+                        <PropertyValues>
+                          <PropertyValue z:Id="i107">
+                            <PropertyName>Count</PropertyName>
+                            <_dataType>Expression</_dataType>
+                            <_expression>2</_expression>
+                            <_screenShotBase64 i:nil="true" />
+                            <_value i:nil="true" />
+                            <_xpathSettings xmlns:d15p1="http://schemas.datacontract.org/2004/07/BR.XPath" i:nil="true" />
+                          </PropertyValue>
+                        </PropertyValues>
+                        <SelectedOptionId>0</SelectedOptionId>
+                        <EnableStatus>true</EnableStatus>
+                        <ExceptionHandlingMode>Default</ExceptionHandlingMode>
+                        <RetryCount>-1</RetryCount>
+                        <Text></Text>
+                        <_activityFullName>BR.Core.Base.Sleep</_activityFullName>
+                      </AbstractStep>
+                      <AbstractStep z:Id="i108" i:type="ExecutedStep">
+                        <Childs />
+                        <Id>94231ba0-c359-44b6-a455-5210b9c4cf04</Id>
+                        <Parent z:Ref="i7" />
+                        <PropertyValues>
+                          <PropertyValue z:Id="i109">
+                            <PropertyName>Browser</PropertyName>
+                            <_dataType>Expression</_dataType>
+                            <_expression>Google</_expression>
+                            <_screenShotBase64 i:nil="true" />
+                            <_value i:nil="true" />
+                            <_xpathSettings xmlns:d15p1="http://schemas.datacontract.org/2004/07/BR.XPath" i:nil="true" />
+                          </PropertyValue>
+                        </PropertyValues>
+                        <SelectedOptionId i:nil="true" />
+                        <EnableStatus>true</EnableStatus>
+                        <ExceptionHandlingMode>Default</ExceptionHandlingMode>
+                        <RetryCount>-1</RetryCount>
+                        <Text>Закрыть вкладку</Text>
+                        <_activityFullName>Activities.Web.CloseBrowser</_activityFullName>
+                      </AbstractStep>
+                    </Childs>
+                    <Id>5f7f4b94-c813-46b2-8408-7ea9fe2f22cf</Id>
+                    <Parent z:Ref="i6" />
+                    <PropertyValues />
+                    <SelectedOptionId i:nil="true" />
+                    <EnableStatus>true</EnableStatus>
+                    <ExceptionHandlingMode>Default</ExceptionHandlingMode>
+                    <RetryCount>-1</RetryCount>
+                    <Text>Сделать</Text>
+                    <_activityFullName>BR.Core.Base.Container</_activityFullName>
+                  </AbstractStep>
+                </Childs>
+                <Id>71d6148a-4479-420d-9523-9d4df8c4a4ae</Id>
+                <Parent z:Ref="i5" />
+                <PropertyValues />
+                <SelectedOptionId i:nil="true" />
+                <EnableStatus>true</EnableStatus>
+                <ExceptionHandlingMode>Default</ExceptionHandlingMode>
+                <RetryCount>-1</RetryCount>
+                <Text i:nil="true" />
+                <_activityFullName>BR.Core.Base.Container</_activityFullName>
+              </AbstractStep>
+            </Childs>
+            <Id>0333bc6a-859d-4df8-9f31-7aebdb39a193</Id>
+            <Parent z:Ref="i4" />
+            <PropertyValues />
+            <SelectedOptionId i:nil="true" />
+            <EnableStatus>true</EnableStatus>
+            <ExceptionHandlingMode>Default</ExceptionHandlingMode>
+            <RetryCount>-1</RetryCount>
+            <Text>ui:BrowserScope</Text>
+            <_activityFullName>BR.Core.Base.Container</_activityFullName>
+          </AbstractStep>
+        </Childs>
+        <Id>28ecc480-4234-44ad-a4df-11a7e3e67fa5</Id>
+        <Parent z:Ref="i2" />
+        <PropertyValues />
+        <SelectedOptionId i:nil="true" />
+        <EnableStatus>true</EnableStatus>
+        <ExceptionHandlingMode>Default</ExceptionHandlingMode>
+        <RetryCount>-1</RetryCount>
+        <Text>System1_UpdateWorkItems</Text>
+        <_activityFullName>BR.Core.Base.Container</_activityFullName>
+      </AbstractStep>
+    </Childs>
+    <Id>0ab323f3-dd2e-4e4b-90f1-ee7e9183d30c</Id>
+    <Parent i:nil="true" />
+    <PropertyValues />
+    <SelectedOptionId i:nil="true" />
+    <EnableStatus>true</EnableStatus>
+    <ExceptionHandlingMode>Default</ExceptionHandlingMode>
+    <RetryCount>-1</RetryCount>
+    <Text></Text>
+    <_activityFullName>BR.Core.Base.Container</_activityFullName>
+  </Logic>
+  <Name>System1_UpdateWorkItems.pix</Name>
+  <Namespaces xmlns:d2p1="http://schemas.microsoft.com/2003/10/Serialization/Arrays" />
+  <Params>
+    <Parameter z:Id="i110">
+      <DefaultValueExpression></DefaultValueExpression>
+      <Description></Description>
+      <Name>in_Comment</Name>
+      <RunnerType>None</RunnerType>
+      <TypeString>System.String</TypeString>
+    </Parameter>
+  </Params>
+  <TemplateVersion xmlns:d2p1="http://schemas.datacontract.org/2004/07/System" i:nil="true" />
+  <Variables xmlns:d2p1="http://schemas.datacontract.org/2004/07/BR.Logic.Params" />
+  <Version i:nil="true" />
+</Script>

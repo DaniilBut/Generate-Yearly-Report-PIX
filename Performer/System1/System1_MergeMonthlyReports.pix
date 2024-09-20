@@ -1,0 +1,688 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Script xmlns:i="http://www.w3.org/2001/XMLSchema-instance" z:Id="i1" xmlns:z="http://schemas.microsoft.com/2003/10/Serialization/" xmlns="http://schemas.datacontract.org/2004/07/BR.Logic">
+  <CompilationType>CSharp</CompilationType>
+  <Description i:nil="true" />
+  <Id>2f7fdd3d-5d31-4c69-a1d6-b9beb3db3d9f</Id>
+  <Logic z:Id="i2" i:type="ExecutedStep">
+    <Childs>
+      <AbstractStep z:Id="i3" i:type="CommentStep">
+        <Childs />
+        <Id>fe7c25b3-98e7-4193-9704-7610a94252ac</Id>
+        <Parent z:Ref="i2" />
+        <PropertyValues />
+        <SelectedOptionId i:nil="true" />
+        <Text>Создает годовой отчет</Text>
+      </AbstractStep>
+      <AbstractStep z:Id="i4" i:type="ExecutedStep">
+        <Childs>
+          <AbstractStep z:Id="i5" i:type="ExecutedStep">
+            <Childs />
+            <Id>cf23041c-4b01-4bd8-ac76-80fdbcb705e0</Id>
+            <Parent z:Ref="i4" />
+            <PropertyValues>
+              <PropertyValue z:Id="i6">
+                <PropertyName>Value</PropertyName>
+                <_dataType>Expression</_dataType>
+                <_expression>default(System.String[])</_expression>
+                <_screenShotBase64 i:nil="true" />
+                <_value i:nil="true" />
+                <_xpathSettings xmlns:d9p1="http://schemas.datacontract.org/2004/07/BR.XPath" i:nil="true" />
+              </PropertyValue>
+              <PropertyValue z:Id="i7">
+                <PropertyName>To</PropertyName>
+                <_dataType>Expression</_dataType>
+                <_expression>FileArray</_expression>
+                <_screenShotBase64 i:nil="true" />
+                <_value i:nil="true" />
+                <_xpathSettings xmlns:d9p1="http://schemas.datacontract.org/2004/07/BR.XPath" i:nil="true" />
+              </PropertyValue>
+            </PropertyValues>
+            <SelectedOptionId i:nil="true" />
+            <EnableStatus>true</EnableStatus>
+            <ExceptionHandlingMode>Default</ExceptionHandlingMode>
+            <RetryCount>-1</RetryCount>
+            <Text>ПЕРЕМЕННАЯ: FileArray</Text>
+            <_activityFullName>BR.Core.Base.Assign</_activityFullName>
+          </AbstractStep>
+          <AbstractStep z:Id="i8" i:type="ExecutedStep">
+            <Childs />
+            <Id>dae43e59-48ee-4563-ba3b-00f280cbd40b</Id>
+            <Parent z:Ref="i4" />
+            <PropertyValues>
+              <PropertyValue z:Id="i9">
+                <PropertyName>Value</PropertyName>
+                <_dataType>Expression</_dataType>
+                <_expression>default(System.Data.DataTable)</_expression>
+                <_screenShotBase64 i:nil="true" />
+                <_value i:nil="true" />
+                <_xpathSettings xmlns:d9p1="http://schemas.datacontract.org/2004/07/BR.XPath" i:nil="true" />
+              </PropertyValue>
+              <PropertyValue z:Id="i10">
+                <PropertyName>To</PropertyName>
+                <_dataType>Expression</_dataType>
+                <_expression>MergeReportData</_expression>
+                <_screenShotBase64 i:nil="true" />
+                <_value i:nil="true" />
+                <_xpathSettings xmlns:d9p1="http://schemas.datacontract.org/2004/07/BR.XPath" i:nil="true" />
+              </PropertyValue>
+            </PropertyValues>
+            <SelectedOptionId i:nil="true" />
+            <EnableStatus>true</EnableStatus>
+            <ExceptionHandlingMode>Default</ExceptionHandlingMode>
+            <RetryCount>-1</RetryCount>
+            <Text>ПЕРЕМЕННАЯ: MergeReportData</Text>
+            <_activityFullName>BR.Core.Base.Assign</_activityFullName>
+          </AbstractStep>
+          <AbstractStep z:Id="i11" i:type="ExecutedStep">
+            <Childs />
+            <Id>3d7d0825-69a8-4b8e-8caf-09a9938972b2</Id>
+            <Parent z:Ref="i4" />
+            <PropertyValues>
+              <PropertyValue z:Id="i12">
+                <PropertyName>Value</PropertyName>
+                <_dataType>Expression</_dataType>
+                <_expression>Directory.GetFiles(in_DowloadPath)</_expression>
+                <_screenShotBase64 i:nil="true" />
+                <_value i:nil="true" />
+                <_xpathSettings xmlns:d9p1="http://schemas.datacontract.org/2004/07/BR.XPath" i:nil="true" />
+              </PropertyValue>
+              <PropertyValue z:Id="i13">
+                <PropertyName>To</PropertyName>
+                <_dataType>Expression</_dataType>
+                <_expression>FileArray</_expression>
+                <_screenShotBase64 i:nil="true" />
+                <_value i:nil="true" />
+                <_xpathSettings xmlns:d9p1="http://schemas.datacontract.org/2004/07/BR.XPath" i:nil="true" />
+              </PropertyValue>
+            </PropertyValues>
+            <SelectedOptionId i:nil="true" />
+            <EnableStatus>true</EnableStatus>
+            <ExceptionHandlingMode>Default</ExceptionHandlingMode>
+            <RetryCount>-1</RetryCount>
+            <Text>Получаем список файлов в папке</Text>
+            <_activityFullName>BR.Core.Base.Assign</_activityFullName>
+          </AbstractStep>
+          <AbstractStep z:Id="i14" i:type="ExecutedStep">
+            <Childs />
+            <Id>c93e29a2-d45a-41b4-9873-7f362081ff44</Id>
+            <Parent z:Ref="i4" />
+            <PropertyValues>
+              <PropertyValue z:Id="i15">
+                <PropertyName>Value</PropertyName>
+                <_dataType>Expression</_dataType>
+                <_expression>default(System.Data.DataTable)</_expression>
+                <_screenShotBase64 i:nil="true" />
+                <_value i:nil="true" />
+                <_xpathSettings xmlns:d9p1="http://schemas.datacontract.org/2004/07/BR.XPath" i:nil="true" />
+              </PropertyValue>
+              <PropertyValue z:Id="i16">
+                <PropertyName>To</PropertyName>
+                <_dataType>Expression</_dataType>
+                <_expression>ReportData</_expression>
+                <_screenShotBase64 i:nil="true" />
+                <_value i:nil="true" />
+                <_xpathSettings xmlns:d9p1="http://schemas.datacontract.org/2004/07/BR.XPath" i:nil="true" />
+              </PropertyValue>
+            </PropertyValues>
+            <SelectedOptionId i:nil="true" />
+            <EnableStatus>true</EnableStatus>
+            <ExceptionHandlingMode>Default</ExceptionHandlingMode>
+            <RetryCount>-1</RetryCount>
+            <Text>ПЕРЕМЕННАЯ: ReportData</Text>
+            <_activityFullName>BR.Core.Base.Assign</_activityFullName>
+          </AbstractStep>
+          <AbstractStep z:Id="i17" i:type="ExecutedStep">
+            <Childs>
+              <AbstractStep z:Id="i18" i:type="ExecutedStep">
+                <Childs>
+                  <AbstractStep z:Id="i19" i:type="ExecutedStep">
+                    <Childs>
+                      <AbstractStep z:Id="i20" i:type="ExecutedStep">
+                        <Childs>
+                          <AbstractStep z:Id="i21" i:type="ExecutedStep">
+                            <Childs>
+                              <AbstractStep z:Id="i22" i:type="ExecutedStep">
+                                <Childs>
+                                  <AbstractStep z:Id="i23" i:type="ExecutedStep">
+                                    <Childs />
+                                    <Id>81c5e147-fa48-4652-907c-d2760819aa3f</Id>
+                                    <Parent z:Ref="i22" />
+                                    <PropertyValues>
+                                      <PropertyValue z:Id="i24">
+                                        <PropertyName>PathToFile</PropertyName>
+                                        <_dataType>Expression</_dataType>
+                                        <_expression>currentText</_expression>
+                                        <_screenShotBase64 i:nil="true" />
+                                        <_value i:nil="true" />
+                                        <_xpathSettings xmlns:d21p1="http://schemas.datacontract.org/2004/07/BR.XPath" i:nil="true" />
+                                      </PropertyValue>
+                                      <PropertyValue z:Id="i25">
+                                        <PropertyName>ExcelVariable</PropertyName>
+                                        <_dataType>Expression</_dataType>
+                                        <_expression>Excel</_expression>
+                                        <_screenShotBase64 i:nil="true" />
+                                        <_value i:nil="true" />
+                                        <_xpathSettings xmlns:d21p1="http://schemas.datacontract.org/2004/07/BR.XPath" i:nil="true" />
+                                      </PropertyValue>
+                                    </PropertyValues>
+                                    <SelectedOptionId i:nil="true" />
+                                    <EnableStatus>true</EnableStatus>
+                                    <ExceptionHandlingMode>Default</ExceptionHandlingMode>
+                                    <RetryCount>-1</RetryCount>
+                                    <Text></Text>
+                                    <_activityFullName>Activities.Office.InteropExcel.ConnectExcel</_activityFullName>
+                                  </AbstractStep>
+                                  <AbstractStep z:Id="i26" i:type="ExecutedStep">
+                                    <Childs />
+                                    <Id>85001947-6f9f-498d-b311-9b47cb03a583</Id>
+                                    <Parent z:Ref="i22" />
+                                    <PropertyValues>
+                                      <PropertyValue z:Id="i27">
+                                        <PropertyName>Range</PropertyName>
+                                        <_dataType>Expression</_dataType>
+                                        <_expression>""</_expression>
+                                        <_screenShotBase64 i:nil="true" />
+                                        <_value i:nil="true" />
+                                        <_xpathSettings xmlns:d21p1="http://schemas.datacontract.org/2004/07/BR.XPath" i:nil="true" />
+                                      </PropertyValue>
+                                      <PropertyValue z:Id="i28">
+                                        <PropertyName>DataTable</PropertyName>
+                                        <_dataType>Expression</_dataType>
+                                        <_expression>ReportData</_expression>
+                                        <_screenShotBase64 i:nil="true" />
+                                        <_value i:nil="true" />
+                                        <_xpathSettings xmlns:d21p1="http://schemas.datacontract.org/2004/07/BR.XPath" i:nil="true" />
+                                      </PropertyValue>
+                                      <PropertyValue z:Id="i29">
+                                        <PropertyName>NameList</PropertyName>
+                                        <_dataType>Expression</_dataType>
+                                        <_expression>""</_expression>
+                                        <_screenShotBase64 i:nil="true" />
+                                        <_value i:nil="true" />
+                                        <_xpathSettings xmlns:d21p1="http://schemas.datacontract.org/2004/07/BR.XPath" i:nil="true" />
+                                      </PropertyValue>
+                                      <PropertyValue z:Id="i30">
+                                        <PropertyName>ExcelVariable</PropertyName>
+                                        <_dataType>Expression</_dataType>
+                                        <_expression>Excel</_expression>
+                                        <_screenShotBase64 i:nil="true" />
+                                        <_value i:nil="true" />
+                                        <_xpathSettings xmlns:d21p1="http://schemas.datacontract.org/2004/07/BR.XPath" i:nil="true" />
+                                      </PropertyValue>
+                                    </PropertyValues>
+                                    <SelectedOptionId i:nil="true" />
+                                    <EnableStatus>true</EnableStatus>
+                                    <ExceptionHandlingMode>Default</ExceptionHandlingMode>
+                                    <RetryCount>-1</RetryCount>
+                                    <Text></Text>
+                                    <_activityFullName>Activities.Office.InteropExcel.ReadRangeNew</_activityFullName>
+                                  </AbstractStep>
+                                  <AbstractStep z:Id="i31" i:type="ExecutedStep">
+                                    <Childs>
+                                      <AbstractStep z:Id="i32" i:type="ExecutedStep">
+                                        <Childs>
+                                          <AbstractStep z:Id="i33" i:type="ExecutedStep">
+                                            <Childs>
+                                              <AbstractStep z:Id="i34" i:type="ExecutedStep">
+                                                <Childs />
+                                                <Id>0e18d7e1-5190-4089-b561-de279c164f2f</Id>
+                                                <Parent z:Ref="i33" />
+                                                <PropertyValues>
+                                                  <PropertyValue z:Id="i35">
+                                                    <PropertyName>Value</PropertyName>
+                                                    <_dataType>Expression</_dataType>
+                                                    <_expression>ReportData</_expression>
+                                                    <_screenShotBase64 i:nil="true" />
+                                                    <_value i:nil="true" />
+                                                    <_xpathSettings xmlns:d27p1="http://schemas.datacontract.org/2004/07/BR.XPath" i:nil="true" />
+                                                  </PropertyValue>
+                                                  <PropertyValue z:Id="i36">
+                                                    <PropertyName>To</PropertyName>
+                                                    <_dataType>Expression</_dataType>
+                                                    <_expression>MergeReportData</_expression>
+                                                    <_screenShotBase64 i:nil="true" />
+                                                    <_value i:nil="true" />
+                                                    <_xpathSettings xmlns:d27p1="http://schemas.datacontract.org/2004/07/BR.XPath" i:nil="true" />
+                                                  </PropertyValue>
+                                                </PropertyValues>
+                                                <SelectedOptionId i:nil="true" />
+                                                <EnableStatus>true</EnableStatus>
+                                                <ExceptionHandlingMode>Default</ExceptionHandlingMode>
+                                                <RetryCount>-1</RetryCount>
+                                                <Text>Сохраняем данные в общую таблицу</Text>
+                                                <_activityFullName>BR.Core.Base.Assign</_activityFullName>
+                                              </AbstractStep>
+                                            </Childs>
+                                            <Id>d2192f27-dab8-45fc-9ec0-f6e60e723687</Id>
+                                            <Parent z:Ref="i32" />
+                                            <PropertyValues />
+                                            <SelectedOptionId i:nil="true" />
+                                            <EnableStatus>true</EnableStatus>
+                                            <ExceptionHandlingMode>Default</ExceptionHandlingMode>
+                                            <RetryCount>-1</RetryCount>
+                                            <Text>Да</Text>
+                                            <_activityFullName>BR.Core.Base.Container</_activityFullName>
+                                          </AbstractStep>
+                                        </Childs>
+                                        <Id>fa7870b8-4b1b-4f69-8e3b-df807074c572</Id>
+                                        <Parent z:Ref="i31" />
+                                        <PropertyValues />
+                                        <SelectedOptionId i:nil="true" />
+                                        <EnableStatus>true</EnableStatus>
+                                        <ExceptionHandlingMode>Default</ExceptionHandlingMode>
+                                        <RetryCount>-1</RetryCount>
+                                        <Text></Text>
+                                        <_activityFullName>BR.Core.Base.IfTrue</_activityFullName>
+                                      </AbstractStep>
+                                      <AbstractStep z:Id="i37" i:type="ExecutedStep">
+                                        <Childs>
+                                          <AbstractStep z:Id="i38" i:type="ExecutedStep">
+                                            <Childs>
+                                              <AbstractStep z:Id="i39" i:type="ExecutedStep">
+                                                <Childs />
+                                                <Id>918d7330-fa5e-4ccc-a222-7adc69d216d5</Id>
+                                                <Parent z:Ref="i38" />
+                                                <PropertyValues>
+                                                  <PropertyValue z:Id="i40">
+                                                    <PropertyName>SourceDataTable</PropertyName>
+                                                    <_dataType>Expression</_dataType>
+                                                    <_expression>ReportData</_expression>
+                                                    <_screenShotBase64 i:nil="true" />
+                                                    <_value i:nil="true" />
+                                                    <_xpathSettings xmlns:d27p1="http://schemas.datacontract.org/2004/07/BR.XPath" i:nil="true" />
+                                                  </PropertyValue>
+                                                  <PropertyValue z:Id="i41">
+                                                    <PropertyName>MissingSchemaAction</PropertyName>
+                                                    <_dataType>Value</_dataType>
+                                                    <_expression i:nil="true" />
+                                                    <_screenShotBase64 i:nil="true" />
+                                                    <_value xmlns:d27p1="http://schemas.datacontract.org/2004/07/System.Data" i:type="d27p1:MissingSchemaAction">Add</_value>
+                                                    <_xpathSettings xmlns:d27p1="http://schemas.datacontract.org/2004/07/BR.XPath" i:nil="true" />
+                                                  </PropertyValue>
+                                                  <PropertyValue z:Id="i42">
+                                                    <PropertyName>Result</PropertyName>
+                                                    <_dataType>Expression</_dataType>
+                                                    <_expression>MergeReportData</_expression>
+                                                    <_screenShotBase64 i:nil="true" />
+                                                    <_value i:nil="true" />
+                                                    <_xpathSettings xmlns:d27p1="http://schemas.datacontract.org/2004/07/BR.XPath" i:nil="true" />
+                                                  </PropertyValue>
+                                                  <PropertyValue z:Id="i43">
+                                                    <PropertyName>BaseDataTable</PropertyName>
+                                                    <_dataType>Expression</_dataType>
+                                                    <_expression>MergeReportData</_expression>
+                                                    <_screenShotBase64 i:nil="true" />
+                                                    <_value i:nil="true" />
+                                                    <_xpathSettings xmlns:d27p1="http://schemas.datacontract.org/2004/07/BR.XPath" i:nil="true" />
+                                                  </PropertyValue>
+                                                </PropertyValues>
+                                                <SelectedOptionId i:nil="true" />
+                                                <EnableStatus>true</EnableStatus>
+                                                <ExceptionHandlingMode>Default</ExceptionHandlingMode>
+                                                <RetryCount>-1</RetryCount>
+                                                <Text>Добавляем данные в общую таблицу</Text>
+                                                <_activityFullName>Activities.BaseCollections.DT.MergeTables</_activityFullName>
+                                              </AbstractStep>
+                                            </Childs>
+                                            <Id>8a332383-524a-4d5c-86e7-13aaf2927807</Id>
+                                            <Parent z:Ref="i37" />
+                                            <PropertyValues />
+                                            <SelectedOptionId i:nil="true" />
+                                            <EnableStatus>true</EnableStatus>
+                                            <ExceptionHandlingMode>Default</ExceptionHandlingMode>
+                                            <RetryCount>-1</RetryCount>
+                                            <Text>Нет</Text>
+                                            <_activityFullName>BR.Core.Base.Container</_activityFullName>
+                                          </AbstractStep>
+                                        </Childs>
+                                        <Id>207520c0-8dc7-466f-af6c-742cb2349519</Id>
+                                        <Parent z:Ref="i31" />
+                                        <PropertyValues />
+                                        <SelectedOptionId i:nil="true" />
+                                        <EnableStatus>true</EnableStatus>
+                                        <ExceptionHandlingMode>Default</ExceptionHandlingMode>
+                                        <RetryCount>-1</RetryCount>
+                                        <Text></Text>
+                                        <_activityFullName>BR.Core.Base.IfFalse</_activityFullName>
+                                      </AbstractStep>
+                                    </Childs>
+                                    <Id>2003ec8e-a6b7-4d67-b854-82f831ee40d7</Id>
+                                    <Parent z:Ref="i22" />
+                                    <PropertyValues>
+                                      <PropertyValue z:Id="i44">
+                                        <PropertyName>Condition</PropertyName>
+                                        <_dataType>Expression</_dataType>
+                                        <_expression>MergeReportData is null</_expression>
+                                        <_screenShotBase64 i:nil="true" />
+                                        <_value i:nil="true" />
+                                        <_xpathSettings xmlns:d21p1="http://schemas.datacontract.org/2004/07/BR.XPath" i:nil="true" />
+                                      </PropertyValue>
+                                    </PropertyValues>
+                                    <SelectedOptionId i:nil="true" />
+                                    <EnableStatus>true</EnableStatus>
+                                    <ExceptionHandlingMode>Default</ExceptionHandlingMode>
+                                    <RetryCount>-1</RetryCount>
+                                    <Text>Файл был первым?</Text>
+                                    <_activityFullName>BR.Core.Base.If</_activityFullName>
+                                  </AbstractStep>
+                                  <AbstractStep z:Id="i45" i:type="ExecutedStep">
+                                    <Childs />
+                                    <Id>42750a15-e419-4d5e-a660-c6c510cc9013</Id>
+                                    <Parent z:Ref="i22" />
+                                    <PropertyValues>
+                                      <PropertyValue z:Id="i46">
+                                        <PropertyName>ExcelVariable</PropertyName>
+                                        <_dataType>Expression</_dataType>
+                                        <_expression>Excel</_expression>
+                                        <_screenShotBase64 i:nil="true" />
+                                        <_value i:nil="true" />
+                                        <_xpathSettings xmlns:d21p1="http://schemas.datacontract.org/2004/07/BR.XPath" i:nil="true" />
+                                      </PropertyValue>
+                                    </PropertyValues>
+                                    <SelectedOptionId i:nil="true" />
+                                    <EnableStatus>true</EnableStatus>
+                                    <ExceptionHandlingMode>Default</ExceptionHandlingMode>
+                                    <RetryCount>-1</RetryCount>
+                                    <Text></Text>
+                                    <_activityFullName>Activities.Office.InteropExcel.ClosedConnectionExcel</_activityFullName>
+                                  </AbstractStep>
+                                </Childs>
+                                <Id>0cb74aeb-3d2e-448a-85df-7e0980c5b62b</Id>
+                                <Parent z:Ref="i21" />
+                                <PropertyValues />
+                                <SelectedOptionId i:nil="true" />
+                                <EnableStatus>true</EnableStatus>
+                                <ExceptionHandlingMode>Default</ExceptionHandlingMode>
+                                <RetryCount>-1</RetryCount>
+                                <Text>Сделать</Text>
+                                <_activityFullName>BR.Core.Base.Container</_activityFullName>
+                              </AbstractStep>
+                            </Childs>
+                            <Id>85f64e16-baf0-4007-9b81-2ffdc6b77944</Id>
+                            <Parent z:Ref="i20" />
+                            <PropertyValues />
+                            <SelectedOptionId i:nil="true" />
+                            <EnableStatus>true</EnableStatus>
+                            <ExceptionHandlingMode>Default</ExceptionHandlingMode>
+                            <RetryCount>-1</RetryCount>
+                            <Text i:nil="true" />
+                            <_activityFullName>BR.Core.Base.Container</_activityFullName>
+                          </AbstractStep>
+                        </Childs>
+                        <Id>b4ab45dc-6fec-4a69-9cd3-ddc69fceeffb</Id>
+                        <Parent z:Ref="i19" />
+                        <PropertyValues />
+                        <SelectedOptionId i:nil="true" />
+                        <EnableStatus>true</EnableStatus>
+                        <ExceptionHandlingMode>Default</ExceptionHandlingMode>
+                        <RetryCount>-1</RetryCount>
+                        <Text>ueab:ExcelApplicationCard</Text>
+                        <_activityFullName>BR.Core.Base.Container</_activityFullName>
+                      </AbstractStep>
+                    </Childs>
+                    <Id>6dd2e0b2-b6da-44bd-b871-83fea90a68f2</Id>
+                    <Parent z:Ref="i18" />
+                    <PropertyValues />
+                    <SelectedOptionId i:nil="true" />
+                    <EnableStatus>true</EnableStatus>
+                    <ExceptionHandlingMode>Default</ExceptionHandlingMode>
+                    <RetryCount>-1</RetryCount>
+                    <Text>Тело</Text>
+                    <_activityFullName>BR.Core.Base.Container</_activityFullName>
+                  </AbstractStep>
+                </Childs>
+                <Id>4e3a3ee9-433d-468c-acb8-8784b3e87ec0</Id>
+                <Parent z:Ref="i17" />
+                <PropertyValues />
+                <SelectedOptionId i:nil="true" />
+                <EnableStatus>true</EnableStatus>
+                <ExceptionHandlingMode>Default</ExceptionHandlingMode>
+                <RetryCount>-1</RetryCount>
+                <Text i:nil="true" />
+                <_activityFullName>BR.Core.Base.Container</_activityFullName>
+              </AbstractStep>
+            </Childs>
+            <Id>de91994e-0b9a-4971-bf02-6e3ae39f8239</Id>
+            <Parent z:Ref="i4" />
+            <PropertyValues>
+              <PropertyValue z:Id="i47">
+                <PropertyName>Collection</PropertyName>
+                <_dataType>Expression</_dataType>
+                <_expression>FileArray</_expression>
+                <_screenShotBase64 i:nil="true" />
+                <_value i:nil="true" />
+                <_xpathSettings xmlns:d9p1="http://schemas.datacontract.org/2004/07/BR.XPath" i:nil="true" />
+              </PropertyValue>
+              <PropertyValue z:Id="i48">
+                <PropertyName>Iterator</PropertyName>
+                <_dataType>Expression</_dataType>
+                <_expression>currentText</_expression>
+                <_screenShotBase64 i:nil="true" />
+                <_value i:nil="true" />
+                <_xpathSettings xmlns:d9p1="http://schemas.datacontract.org/2004/07/BR.XPath" i:nil="true" />
+              </PropertyValue>
+              <PropertyValue z:Id="i49">
+                <PropertyName>Counter</PropertyName>
+                <_dataType>Expression</_dataType>
+                <_expression></_expression>
+                <_screenShotBase64 i:nil="true" />
+                <_value i:nil="true" />
+                <_xpathSettings xmlns:d9p1="http://schemas.datacontract.org/2004/07/BR.XPath" i:nil="true" />
+              </PropertyValue>
+            </PropertyValues>
+            <SelectedOptionId i:nil="true" />
+            <EnableStatus>true</EnableStatus>
+            <ExceptionHandlingMode>Default</ExceptionHandlingMode>
+            <RetryCount>-1</RetryCount>
+            <Text>Считываем информацию из каждого файла</Text>
+            <_activityFullName>BR.Core.Base.LoopForEach</_activityFullName>
+          </AbstractStep>
+          <AbstractStep z:Id="i50" i:type="ExecutedStep">
+            <Childs />
+            <Id>b860ebd2-2780-4ce3-a0ad-308798c7820f</Id>
+            <Parent z:Ref="i4" />
+            <PropertyValues>
+              <PropertyValue z:Id="i51">
+                <PropertyName>Value</PropertyName>
+                <_dataType>Expression</_dataType>
+                <_expression>Environment.CurrentDirectory + @"\" + in_YearlyReportFolder + @"\Yearly-Report-" + in_Year + "-" + in_TaxID + ".xlsx"</_expression>
+                <_screenShotBase64 i:nil="true" />
+                <_value i:nil="true" />
+                <_xpathSettings xmlns:d9p1="http://schemas.datacontract.org/2004/07/BR.XPath" i:nil="true" />
+              </PropertyValue>
+              <PropertyValue z:Id="i52">
+                <PropertyName>To</PropertyName>
+                <_dataType>Expression</_dataType>
+                <_expression>out_YearlyReportPath</_expression>
+                <_screenShotBase64 i:nil="true" />
+                <_value i:nil="true" />
+                <_xpathSettings xmlns:d9p1="http://schemas.datacontract.org/2004/07/BR.XPath" i:nil="true" />
+              </PropertyValue>
+            </PropertyValues>
+            <SelectedOptionId i:nil="true" />
+            <EnableStatus>true</EnableStatus>
+            <ExceptionHandlingMode>Default</ExceptionHandlingMode>
+            <RetryCount>-1</RetryCount>
+            <Text>Формируем путь до файла выгрузки</Text>
+            <_activityFullName>BR.Core.Base.Assign</_activityFullName>
+          </AbstractStep>
+          <AbstractStep z:Id="i53" i:type="ExecutedStep">
+            <Childs />
+            <Id>7ebd3983-fdf5-4d7c-9fed-d7ba4b3dfeab</Id>
+            <Parent z:Ref="i4" />
+            <PropertyValues>
+              <PropertyValue z:Id="i54">
+                <PropertyName>Value</PropertyName>
+                <_dataType>Expression</_dataType>
+                <_expression>MergeReportData.AsEnumerable().OrderBy(row =&gt; DateTime.Parse(row.Field&lt;string&gt;("Date"))).CopyToDataTable()</_expression>
+                <_screenShotBase64 i:nil="true" />
+                <_value i:nil="true" />
+                <_xpathSettings xmlns:d9p1="http://schemas.datacontract.org/2004/07/BR.XPath" i:nil="true" />
+              </PropertyValue>
+              <PropertyValue z:Id="i55">
+                <PropertyName>To</PropertyName>
+                <_dataType>Expression</_dataType>
+                <_expression>MergeReportData</_expression>
+                <_screenShotBase64 i:nil="true" />
+                <_value i:nil="true" />
+                <_xpathSettings xmlns:d9p1="http://schemas.datacontract.org/2004/07/BR.XPath" i:nil="true" />
+              </PropertyValue>
+            </PropertyValues>
+            <SelectedOptionId i:nil="true" />
+            <EnableStatus>true</EnableStatus>
+            <ExceptionHandlingMode>Default</ExceptionHandlingMode>
+            <RetryCount>-1</RetryCount>
+            <Text></Text>
+            <_activityFullName>BR.Core.Base.Assign</_activityFullName>
+          </AbstractStep>
+          <AbstractStep z:Id="i56" i:type="ExecutedStep">
+            <Childs>
+              <AbstractStep z:Id="i57" i:type="ExecutedStep">
+                <Childs>
+                  <AbstractStep z:Id="i58" i:type="ExecutedStep">
+                    <Childs>
+                      <AbstractStep z:Id="i59" i:type="ExecutedStep">
+                        <Childs />
+                        <Id>bf4ecc3c-35b8-4471-b811-29c2754b3402</Id>
+                        <Parent z:Ref="i58" />
+                        <PropertyValues>
+                          <PropertyValue z:Id="i60">
+                            <PropertyName>DataTable</PropertyName>
+                            <_dataType>Expression</_dataType>
+                            <_expression>MergeReportData</_expression>
+                            <_screenShotBase64 i:nil="true" />
+                            <_value i:nil="true" />
+                            <_xpathSettings xmlns:d15p1="http://schemas.datacontract.org/2004/07/BR.XPath" i:nil="true" />
+                          </PropertyValue>
+                          <PropertyValue z:Id="i61">
+                            <PropertyName>ConsiderDataType</PropertyName>
+                            <_dataType>Value</_dataType>
+                            <_expression i:nil="true" />
+                            <_screenShotBase64 i:nil="true" />
+                            <_value xmlns:d15p1="http://www.w3.org/2001/XMLSchema" i:type="d15p1:boolean">true</_value>
+                            <_xpathSettings xmlns:d15p1="http://schemas.datacontract.org/2004/07/BR.XPath" i:nil="true" />
+                          </PropertyValue>
+                          <PropertyValue z:Id="i62">
+                            <PropertyName>SheetName</PropertyName>
+                            <_dataType>Value</_dataType>
+                            <_expression i:nil="true" />
+                            <_screenShotBase64 i:nil="true" />
+                            <_value xmlns:d15p1="http://www.w3.org/2001/XMLSchema" i:type="d15p1:string">Лист1</_value>
+                            <_xpathSettings xmlns:d15p1="http://schemas.datacontract.org/2004/07/BR.XPath" i:nil="true" />
+                          </PropertyValue>
+                          <PropertyValue z:Id="i63">
+                            <PropertyName>FileName</PropertyName>
+                            <_dataType>Expression</_dataType>
+                            <_expression>out_YearlyReportPath</_expression>
+                            <_screenShotBase64 i:nil="true" />
+                            <_value i:nil="true" />
+                            <_xpathSettings xmlns:d15p1="http://schemas.datacontract.org/2004/07/BR.XPath" i:nil="true" />
+                          </PropertyValue>
+                        </PropertyValues>
+                        <SelectedOptionId i:nil="true" />
+                        <EnableStatus>true</EnableStatus>
+                        <ExceptionHandlingMode>Default</ExceptionHandlingMode>
+                        <RetryCount>-1</RetryCount>
+                        <Text></Text>
+                        <_activityFullName>Activities.Office.Excel.WriteRange</_activityFullName>
+                      </AbstractStep>
+                    </Childs>
+                    <Id>9f1c5439-e696-4aca-994e-2caf8e9c1384</Id>
+                    <Parent z:Ref="i57" />
+                    <PropertyValues />
+                    <SelectedOptionId i:nil="true" />
+                    <EnableStatus>true</EnableStatus>
+                    <ExceptionHandlingMode>Default</ExceptionHandlingMode>
+                    <RetryCount>-1</RetryCount>
+                    <Text>Сделать</Text>
+                    <_activityFullName>BR.Core.Base.Container</_activityFullName>
+                  </AbstractStep>
+                </Childs>
+                <Id>00df145c-3067-4ffa-9161-23dadc05a5a4</Id>
+                <Parent z:Ref="i56" />
+                <PropertyValues />
+                <SelectedOptionId i:nil="true" />
+                <EnableStatus>true</EnableStatus>
+                <ExceptionHandlingMode>Default</ExceptionHandlingMode>
+                <RetryCount>-1</RetryCount>
+                <Text i:nil="true" />
+                <_activityFullName>BR.Core.Base.Container</_activityFullName>
+              </AbstractStep>
+            </Childs>
+            <Id>d4675648-292e-4f30-8fa0-72420a9b7c09</Id>
+            <Parent z:Ref="i4" />
+            <PropertyValues />
+            <SelectedOptionId i:nil="true" />
+            <EnableStatus>true</EnableStatus>
+            <ExceptionHandlingMode>Default</ExceptionHandlingMode>
+            <RetryCount>-1</RetryCount>
+            <Text>ueab:ExcelApplicationCard</Text>
+            <_activityFullName>BR.Core.Base.Container</_activityFullName>
+          </AbstractStep>
+        </Childs>
+        <Id>1ea0d733-6ba9-4b57-bb1e-dae59a9c5770</Id>
+        <Parent z:Ref="i2" />
+        <PropertyValues />
+        <SelectedOptionId i:nil="true" />
+        <EnableStatus>true</EnableStatus>
+        <ExceptionHandlingMode>Default</ExceptionHandlingMode>
+        <RetryCount>-1</RetryCount>
+        <Text>System1_MergeMonthlyReports</Text>
+        <_activityFullName>BR.Core.Base.Container</_activityFullName>
+      </AbstractStep>
+    </Childs>
+    <Id>177e95fd-e44b-4cee-be09-f87ace997adf</Id>
+    <Parent i:nil="true" />
+    <PropertyValues />
+    <SelectedOptionId i:nil="true" />
+    <EnableStatus>true</EnableStatus>
+    <ExceptionHandlingMode>Default</ExceptionHandlingMode>
+    <RetryCount>-1</RetryCount>
+    <Text></Text>
+    <_activityFullName>BR.Core.Base.Container</_activityFullName>
+  </Logic>
+  <Name>System1_MergeMonthlyReports.pix</Name>
+  <Namespaces xmlns:d2p1="http://schemas.microsoft.com/2003/10/Serialization/Arrays">
+    <d2p1:string>System.Text.RegularExpressions</d2p1:string>
+  </Namespaces>
+  <Params>
+    <Parameter z:Id="i64">
+      <DefaultValueExpression></DefaultValueExpression>
+      <Description></Description>
+      <Name>in_TaxID</Name>
+      <RunnerType>None</RunnerType>
+      <TypeString>System.String</TypeString>
+    </Parameter>
+    <Parameter z:Id="i65">
+      <DefaultValueExpression></DefaultValueExpression>
+      <Description></Description>
+      <Name>in_Year</Name>
+      <RunnerType>None</RunnerType>
+      <TypeString>System.String</TypeString>
+    </Parameter>
+    <Parameter z:Id="i66">
+      <DefaultValueExpression></DefaultValueExpression>
+      <Description></Description>
+      <Name>out_YearlyReportPath</Name>
+      <RunnerType>None</RunnerType>
+      <TypeString>System.String</TypeString>
+    </Parameter>
+    <Parameter z:Id="i67">
+      <DefaultValueExpression></DefaultValueExpression>
+      <Description></Description>
+      <Name>in_YearlyReportFolder</Name>
+      <RunnerType>None</RunnerType>
+      <TypeString>System.String</TypeString>
+    </Parameter>
+    <Parameter z:Id="i68">
+      <DefaultValueExpression></DefaultValueExpression>
+      <Description></Description>
+      <Name>in_DowloadPath</Name>
+      <RunnerType>None</RunnerType>
+      <TypeString>System.String</TypeString>
+    </Parameter>
+  </Params>
+  <TemplateVersion xmlns:d2p1="http://schemas.datacontract.org/2004/07/System" i:nil="true" />
+  <Variables xmlns:d2p1="http://schemas.datacontract.org/2004/07/BR.Logic.Params" />
+  <Version i:nil="true" />
+</Script>
