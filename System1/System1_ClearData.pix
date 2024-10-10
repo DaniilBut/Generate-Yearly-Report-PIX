@@ -14,397 +14,326 @@
         <Text>Очищает папки от  файлов</Text>
       </AbstractStep>
       <AbstractStep z:Id="i4" i:type="ExecutedStep">
-        <Childs>
-          <AbstractStep z:Id="i5" i:type="ExecutedStep">
-            <Childs />
-            <Id>7c3add2a-f284-4c4e-ada1-3a4dbec99b13</Id>
-            <Parent z:Ref="i4" />
-            <PropertyValues>
-              <PropertyValue z:Id="i6">
-                <PropertyName>Value</PropertyName>
-                <_dataType>Expression</_dataType>
-                <_expression>default(System.String[])</_expression>
-                <_screenShotBase64 i:nil="true" />
-                <_value i:nil="true" />
-                <_xpathSettings xmlns:d9p1="http://schemas.datacontract.org/2004/07/BR.XPath" i:nil="true" />
-              </PropertyValue>
-              <PropertyValue z:Id="i7">
-                <PropertyName>To</PropertyName>
-                <_dataType>Expression</_dataType>
-                <_expression>FileArray</_expression>
-                <_screenShotBase64 i:nil="true" />
-                <_value i:nil="true" />
-                <_xpathSettings xmlns:d9p1="http://schemas.datacontract.org/2004/07/BR.XPath" i:nil="true" />
-              </PropertyValue>
-            </PropertyValues>
-            <SelectedOptionId i:nil="true" />
-            <EnableStatus>true</EnableStatus>
-            <ExceptionHandlingMode>Default</ExceptionHandlingMode>
-            <RetryCount>-1</RetryCount>
-            <Text>ПЕРЕМЕННАЯ: FileArray</Text>
-            <_activityFullName>BR.Core.Base.Assign</_activityFullName>
-          </AbstractStep>
-          <AbstractStep z:Id="i8" i:type="ExecutedStep">
-            <Childs />
-            <Id>6b143909-f7ed-4629-8b1a-994e72f7d414</Id>
-            <Parent z:Ref="i4" />
-            <PropertyValues>
-              <PropertyValue z:Id="i9">
-                <PropertyName>Value</PropertyName>
-                <_dataType>Expression</_dataType>
-                <_expression>Directory.GetFiles(in_DowloadPath)</_expression>
-                <_screenShotBase64 i:nil="true" />
-                <_value i:nil="true" />
-                <_xpathSettings xmlns:d9p1="http://schemas.datacontract.org/2004/07/BR.XPath" i:nil="true" />
-              </PropertyValue>
-              <PropertyValue z:Id="i10">
-                <PropertyName>To</PropertyName>
-                <_dataType>Expression</_dataType>
-                <_expression>FileArray</_expression>
-                <_screenShotBase64 i:nil="true" />
-                <_value i:nil="true" />
-                <_xpathSettings xmlns:d9p1="http://schemas.datacontract.org/2004/07/BR.XPath" i:nil="true" />
-              </PropertyValue>
-            </PropertyValues>
-            <SelectedOptionId i:nil="true" />
-            <EnableStatus>true</EnableStatus>
-            <ExceptionHandlingMode>Default</ExceptionHandlingMode>
-            <RetryCount>-1</RetryCount>
-            <Text>Получить список файлов в папке</Text>
-            <_activityFullName>BR.Core.Base.Assign</_activityFullName>
-          </AbstractStep>
-          <AbstractStep z:Id="i11" i:type="ExecutedStep">
-            <Childs />
-            <Id>4c56c198-bd98-4c3e-9f32-f66d6027c0a2</Id>
-            <Parent z:Ref="i4" />
-            <PropertyValues>
-              <PropertyValue z:Id="i12">
-                <PropertyName>Value</PropertyName>
-                <_dataType>Expression</_dataType>
-                <_expression>default(System.String[])</_expression>
-                <_screenShotBase64 i:nil="true" />
-                <_value i:nil="true" />
-                <_xpathSettings xmlns:d9p1="http://schemas.datacontract.org/2004/07/BR.XPath" i:nil="true" />
-              </PropertyValue>
-              <PropertyValue z:Id="i13">
-                <PropertyName>To</PropertyName>
-                <_dataType>Expression</_dataType>
-                <_expression>UploadFileArray</_expression>
-                <_screenShotBase64 i:nil="true" />
-                <_value i:nil="true" />
-                <_xpathSettings xmlns:d9p1="http://schemas.datacontract.org/2004/07/BR.XPath" i:nil="true" />
-              </PropertyValue>
-            </PropertyValues>
-            <SelectedOptionId i:nil="true" />
-            <EnableStatus>true</EnableStatus>
-            <ExceptionHandlingMode>Default</ExceptionHandlingMode>
-            <RetryCount>-1</RetryCount>
-            <Text>ПЕРЕМЕННАЯ: FileArray</Text>
-            <_activityFullName>BR.Core.Base.Assign</_activityFullName>
-          </AbstractStep>
-          <AbstractStep z:Id="i14" i:type="ExecutedStep">
-            <Childs />
-            <Id>0db2918c-ec1f-4d43-8f38-e3875e71769a</Id>
-            <Parent z:Ref="i4" />
-            <PropertyValues>
-              <PropertyValue z:Id="i15">
-                <PropertyName>Value</PropertyName>
-                <_dataType>Expression</_dataType>
-                <_expression>Directory.GetFiles(in_UploadPath)</_expression>
-                <_screenShotBase64 i:nil="true" />
-                <_value i:nil="true" />
-                <_xpathSettings xmlns:d9p1="http://schemas.datacontract.org/2004/07/BR.XPath" i:nil="true" />
-              </PropertyValue>
-              <PropertyValue z:Id="i16">
-                <PropertyName>To</PropertyName>
-                <_dataType>Expression</_dataType>
-                <_expression>UploadFileArray</_expression>
-                <_screenShotBase64 i:nil="true" />
-                <_value i:nil="true" />
-                <_xpathSettings xmlns:d9p1="http://schemas.datacontract.org/2004/07/BR.XPath" i:nil="true" />
-              </PropertyValue>
-            </PropertyValues>
-            <SelectedOptionId i:nil="true" />
-            <EnableStatus>true</EnableStatus>
-            <ExceptionHandlingMode>Default</ExceptionHandlingMode>
-            <RetryCount>-1</RetryCount>
-            <Text>Получить список файлов в папке</Text>
-            <_activityFullName>BR.Core.Base.Assign</_activityFullName>
-          </AbstractStep>
-          <AbstractStep z:Id="i17" i:type="ExecutedStep">
-            <Childs>
-              <AbstractStep z:Id="i18" i:type="ExecutedStep">
-                <Childs>
-                  <AbstractStep z:Id="i19" i:type="ExecutedStep">
-                    <Childs>
-                      <AbstractStep z:Id="i20" i:type="ExecutedStep">
-                        <Childs>
-                          <AbstractStep z:Id="i21" i:type="ExecutedStep">
-                            <Childs>
-                              <AbstractStep z:Id="i22" i:type="ExecutedStep">
-                                <Childs />
-                                <Id>8fd0340e-105c-4cd6-9b89-98d0eaa24202</Id>
-                                <Parent z:Ref="i21" />
-                                <PropertyValues>
-                                  <PropertyValue z:Id="i23">
-                                    <PropertyName>FilePath</PropertyName>
-                                    <_dataType>Expression</_dataType>
-                                    <_expression>currentText</_expression>
-                                    <_screenShotBase64 i:nil="true" />
-                                    <_value i:nil="true" />
-                                    <_xpathSettings xmlns:d19p1="http://schemas.datacontract.org/2004/07/BR.XPath" i:nil="true" />
-                                  </PropertyValue>
-                                </PropertyValues>
-                                <SelectedOptionId i:nil="true" />
-                                <EnableStatus>true</EnableStatus>
-                                <ExceptionHandlingMode>Default</ExceptionHandlingMode>
-                                <RetryCount>-1</RetryCount>
-                                <Text>Delete File</Text>
-                                <_activityFullName>Activities.Files.DeleteFile</_activityFullName>
-                              </AbstractStep>
-                            </Childs>
-                            <Id>5c9b0152-d77a-463b-b57c-048a60da4171</Id>
-                            <Parent z:Ref="i20" />
-                            <PropertyValues />
-                            <SelectedOptionId i:nil="true" />
-                            <EnableStatus>true</EnableStatus>
-                            <ExceptionHandlingMode>Default</ExceptionHandlingMode>
-                            <RetryCount>-1</RetryCount>
-                            <Text>Тело</Text>
-                            <_activityFullName>BR.Core.Base.Container</_activityFullName>
-                          </AbstractStep>
-                        </Childs>
-                        <Id>97473ff4-c071-454c-9c0b-db56fb49de5f</Id>
-                        <Parent z:Ref="i19" />
-                        <PropertyValues />
-                        <SelectedOptionId i:nil="true" />
-                        <EnableStatus>true</EnableStatus>
-                        <ExceptionHandlingMode>Default</ExceptionHandlingMode>
-                        <RetryCount>-1</RetryCount>
-                        <Text i:nil="true" />
-                        <_activityFullName>BR.Core.Base.Container</_activityFullName>
-                      </AbstractStep>
-                    </Childs>
-                    <Id>5bb8c94c-65cf-4ff9-a6c0-9eb78bd05ff1</Id>
-                    <Parent z:Ref="i18" />
-                    <PropertyValues>
-                      <PropertyValue z:Id="i24">
-                        <PropertyName>Collection</PropertyName>
-                        <_dataType>Expression</_dataType>
-                        <_expression>FileArray</_expression>
-                        <_screenShotBase64 i:nil="true" />
-                        <_value i:nil="true" />
-                        <_xpathSettings xmlns:d13p1="http://schemas.datacontract.org/2004/07/BR.XPath" i:nil="true" />
-                      </PropertyValue>
-                      <PropertyValue z:Id="i25">
-                        <PropertyName>Iterator</PropertyName>
-                        <_dataType>Expression</_dataType>
-                        <_expression>currentText</_expression>
-                        <_screenShotBase64 i:nil="true" />
-                        <_value i:nil="true" />
-                        <_xpathSettings xmlns:d13p1="http://schemas.datacontract.org/2004/07/BR.XPath" i:nil="true" />
-                      </PropertyValue>
-                      <PropertyValue z:Id="i26">
-                        <PropertyName>Counter</PropertyName>
-                        <_dataType>Expression</_dataType>
-                        <_expression></_expression>
-                        <_screenShotBase64 i:nil="true" />
-                        <_value i:nil="true" />
-                        <_xpathSettings xmlns:d13p1="http://schemas.datacontract.org/2004/07/BR.XPath" i:nil="true" />
-                      </PropertyValue>
-                    </PropertyValues>
-                    <SelectedOptionId i:nil="true" />
-                    <EnableStatus>true</EnableStatus>
-                    <ExceptionHandlingMode>Default</ExceptionHandlingMode>
-                    <RetryCount>-1</RetryCount>
-                    <Text>Удалить каждый файл в папке</Text>
-                    <_activityFullName>BR.Core.Base.LoopForEach</_activityFullName>
-                  </AbstractStep>
-                </Childs>
-                <Id>c2a0e713-d22c-49d6-86c0-7688b4ca690b</Id>
-                <Parent z:Ref="i17" />
-                <PropertyValues />
-                <SelectedOptionId i:nil="true" />
-                <EnableStatus>true</EnableStatus>
-                <ExceptionHandlingMode>Default</ExceptionHandlingMode>
-                <RetryCount>-1</RetryCount>
-                <Text></Text>
-                <_activityFullName>BR.Core.Base.IfTrue</_activityFullName>
-              </AbstractStep>
-              <AbstractStep z:Id="i27" i:type="ExecutedStep">
-                <Childs />
-                <Id>b002b8c6-4313-4575-990b-eadb22eed8af</Id>
-                <Parent z:Ref="i17" />
-                <PropertyValues />
-                <SelectedOptionId i:nil="true" />
-                <EnableStatus>true</EnableStatus>
-                <ExceptionHandlingMode>Default</ExceptionHandlingMode>
-                <RetryCount>-1</RetryCount>
-                <Text></Text>
-                <_activityFullName>BR.Core.Base.IfFalse</_activityFullName>
-              </AbstractStep>
-            </Childs>
-            <Id>9d623bda-813e-4d13-895a-d74ef5d065ae</Id>
-            <Parent z:Ref="i4" />
-            <PropertyValues>
-              <PropertyValue z:Id="i28">
-                <PropertyName>Condition</PropertyName>
-                <_dataType>Expression</_dataType>
-                <_expression>FileArray!=null</_expression>
-                <_screenShotBase64 i:nil="true" />
-                <_value i:nil="true" />
-                <_xpathSettings xmlns:d9p1="http://schemas.datacontract.org/2004/07/BR.XPath" i:nil="true" />
-              </PropertyValue>
-            </PropertyValues>
-            <SelectedOptionId i:nil="true" />
-            <EnableStatus>true</EnableStatus>
-            <ExceptionHandlingMode>Default</ExceptionHandlingMode>
-            <RetryCount>-1</RetryCount>
-            <Text></Text>
-            <_activityFullName>BR.Core.Base.If</_activityFullName>
-          </AbstractStep>
-          <AbstractStep z:Id="i29" i:type="ExecutedStep">
-            <Childs>
-              <AbstractStep z:Id="i30" i:type="ExecutedStep">
-                <Childs>
-                  <AbstractStep z:Id="i31" i:type="ExecutedStep">
-                    <Childs>
-                      <AbstractStep z:Id="i32" i:type="ExecutedStep">
-                        <Childs>
-                          <AbstractStep z:Id="i33" i:type="ExecutedStep">
-                            <Childs>
-                              <AbstractStep z:Id="i34" i:type="ExecutedStep">
-                                <Childs />
-                                <Id>06b81dd3-5e30-4ed8-90a1-f1997f57f3c9</Id>
-                                <Parent z:Ref="i33" />
-                                <PropertyValues>
-                                  <PropertyValue z:Id="i35">
-                                    <PropertyName>FilePath</PropertyName>
-                                    <_dataType>Expression</_dataType>
-                                    <_expression>currentText</_expression>
-                                    <_screenShotBase64 i:nil="true" />
-                                    <_value i:nil="true" />
-                                    <_xpathSettings xmlns:d19p1="http://schemas.datacontract.org/2004/07/BR.XPath" i:nil="true" />
-                                  </PropertyValue>
-                                </PropertyValues>
-                                <SelectedOptionId i:nil="true" />
-                                <EnableStatus>true</EnableStatus>
-                                <ExceptionHandlingMode>Default</ExceptionHandlingMode>
-                                <RetryCount>-1</RetryCount>
-                                <Text>Delete File</Text>
-                                <_activityFullName>Activities.Files.DeleteFile</_activityFullName>
-                              </AbstractStep>
-                            </Childs>
-                            <Id>38d24b17-c8d0-498b-946b-9bea94da34d8</Id>
-                            <Parent z:Ref="i32" />
-                            <PropertyValues />
-                            <SelectedOptionId i:nil="true" />
-                            <EnableStatus>true</EnableStatus>
-                            <ExceptionHandlingMode>Default</ExceptionHandlingMode>
-                            <RetryCount>-1</RetryCount>
-                            <Text>Тело</Text>
-                            <_activityFullName>BR.Core.Base.Container</_activityFullName>
-                          </AbstractStep>
-                        </Childs>
-                        <Id>7a0fd69b-bc5e-48af-a56d-7c2b7b307482</Id>
-                        <Parent z:Ref="i31" />
-                        <PropertyValues />
-                        <SelectedOptionId i:nil="true" />
-                        <EnableStatus>true</EnableStatus>
-                        <ExceptionHandlingMode>Default</ExceptionHandlingMode>
-                        <RetryCount>-1</RetryCount>
-                        <Text i:nil="true" />
-                        <_activityFullName>BR.Core.Base.Container</_activityFullName>
-                      </AbstractStep>
-                    </Childs>
-                    <Id>2cd4e518-90fa-4830-8b29-1c03a5a3f63d</Id>
-                    <Parent z:Ref="i30" />
-                    <PropertyValues>
-                      <PropertyValue z:Id="i36">
-                        <PropertyName>Collection</PropertyName>
-                        <_dataType>Expression</_dataType>
-                        <_expression>UploadFileArray</_expression>
-                        <_screenShotBase64 i:nil="true" />
-                        <_value i:nil="true" />
-                        <_xpathSettings xmlns:d13p1="http://schemas.datacontract.org/2004/07/BR.XPath" i:nil="true" />
-                      </PropertyValue>
-                      <PropertyValue z:Id="i37">
-                        <PropertyName>Iterator</PropertyName>
-                        <_dataType>Expression</_dataType>
-                        <_expression>currentText</_expression>
-                        <_screenShotBase64 i:nil="true" />
-                        <_value i:nil="true" />
-                        <_xpathSettings xmlns:d13p1="http://schemas.datacontract.org/2004/07/BR.XPath" i:nil="true" />
-                      </PropertyValue>
-                      <PropertyValue z:Id="i38">
-                        <PropertyName>Counter</PropertyName>
-                        <_dataType>Expression</_dataType>
-                        <_expression></_expression>
-                        <_screenShotBase64 i:nil="true" />
-                        <_value i:nil="true" />
-                        <_xpathSettings xmlns:d13p1="http://schemas.datacontract.org/2004/07/BR.XPath" i:nil="true" />
-                      </PropertyValue>
-                    </PropertyValues>
-                    <SelectedOptionId i:nil="true" />
-                    <EnableStatus>true</EnableStatus>
-                    <ExceptionHandlingMode>Default</ExceptionHandlingMode>
-                    <RetryCount>-1</RetryCount>
-                    <Text>Удалить каждый файл в папке</Text>
-                    <_activityFullName>BR.Core.Base.LoopForEach</_activityFullName>
-                  </AbstractStep>
-                </Childs>
-                <Id>f3cef5f2-297e-4da9-9075-2c4a819e34b3</Id>
-                <Parent z:Ref="i29" />
-                <PropertyValues />
-                <SelectedOptionId i:nil="true" />
-                <EnableStatus>true</EnableStatus>
-                <ExceptionHandlingMode>Default</ExceptionHandlingMode>
-                <RetryCount>-1</RetryCount>
-                <Text></Text>
-                <_activityFullName>BR.Core.Base.IfTrue</_activityFullName>
-              </AbstractStep>
-              <AbstractStep z:Id="i39" i:type="ExecutedStep">
-                <Childs />
-                <Id>cf09ec60-8086-4bc6-a159-65f8fd504ee7</Id>
-                <Parent z:Ref="i29" />
-                <PropertyValues />
-                <SelectedOptionId i:nil="true" />
-                <EnableStatus>true</EnableStatus>
-                <ExceptionHandlingMode>Default</ExceptionHandlingMode>
-                <RetryCount>-1</RetryCount>
-                <Text></Text>
-                <_activityFullName>BR.Core.Base.IfFalse</_activityFullName>
-              </AbstractStep>
-            </Childs>
-            <Id>ae62fac6-daee-45f6-a05a-fb02a68a563e</Id>
-            <Parent z:Ref="i4" />
-            <PropertyValues>
-              <PropertyValue z:Id="i40">
-                <PropertyName>Condition</PropertyName>
-                <_dataType>Expression</_dataType>
-                <_expression>UploadFileArray!=null</_expression>
-                <_screenShotBase64 i:nil="true" />
-                <_value i:nil="true" />
-                <_xpathSettings xmlns:d9p1="http://schemas.datacontract.org/2004/07/BR.XPath" i:nil="true" />
-              </PropertyValue>
-            </PropertyValues>
-            <SelectedOptionId i:nil="true" />
-            <EnableStatus>true</EnableStatus>
-            <ExceptionHandlingMode>Default</ExceptionHandlingMode>
-            <RetryCount>-1</RetryCount>
-            <Text></Text>
-            <_activityFullName>BR.Core.Base.If</_activityFullName>
-          </AbstractStep>
-        </Childs>
-        <Id>8acb918c-b25c-4dfe-a32f-efb8622fed7f</Id>
+        <Childs />
+        <Id>6b143909-f7ed-4629-8b1a-994e72f7d414</Id>
         <Parent z:Ref="i2" />
-        <PropertyValues />
+        <PropertyValues>
+          <PropertyValue z:Id="i5">
+            <PropertyName>Value</PropertyName>
+            <_dataType>Expression</_dataType>
+            <_expression>Directory.GetFiles(in_DowloadPath)</_expression>
+            <_screenShotBase64 i:nil="true" />
+            <_value i:nil="true" />
+            <_xpathSettings xmlns:d7p1="http://schemas.datacontract.org/2004/07/BR.XPath" i:nil="true" />
+          </PropertyValue>
+          <PropertyValue z:Id="i6">
+            <PropertyName>To</PropertyName>
+            <_dataType>Expression</_dataType>
+            <_expression>FileArray</_expression>
+            <_screenShotBase64 i:nil="true" />
+            <_value i:nil="true" />
+            <_xpathSettings xmlns:d7p1="http://schemas.datacontract.org/2004/07/BR.XPath" i:nil="true" />
+          </PropertyValue>
+        </PropertyValues>
         <SelectedOptionId i:nil="true" />
         <EnableStatus>true</EnableStatus>
         <ExceptionHandlingMode>Default</ExceptionHandlingMode>
         <RetryCount>-1</RetryCount>
-        <Text>System1_ClearData</Text>
-        <_activityFullName>BR.Core.Base.Container</_activityFullName>
+        <Text>Получить список файлов в папке</Text>
+        <_activityFullName>BR.Core.Base.Assign</_activityFullName>
+      </AbstractStep>
+      <AbstractStep z:Id="i7" i:type="ExecutedStep">
+        <Childs />
+        <Id>0db2918c-ec1f-4d43-8f38-e3875e71769a</Id>
+        <Parent z:Ref="i2" />
+        <PropertyValues>
+          <PropertyValue z:Id="i8">
+            <PropertyName>Value</PropertyName>
+            <_dataType>Expression</_dataType>
+            <_expression>Directory.GetFiles(in_UploadPath)</_expression>
+            <_screenShotBase64 i:nil="true" />
+            <_value i:nil="true" />
+            <_xpathSettings xmlns:d7p1="http://schemas.datacontract.org/2004/07/BR.XPath" i:nil="true" />
+          </PropertyValue>
+          <PropertyValue z:Id="i9">
+            <PropertyName>To</PropertyName>
+            <_dataType>Expression</_dataType>
+            <_expression>UploadFileArray</_expression>
+            <_screenShotBase64 i:nil="true" />
+            <_value i:nil="true" />
+            <_xpathSettings xmlns:d7p1="http://schemas.datacontract.org/2004/07/BR.XPath" i:nil="true" />
+          </PropertyValue>
+        </PropertyValues>
+        <SelectedOptionId i:nil="true" />
+        <EnableStatus>true</EnableStatus>
+        <ExceptionHandlingMode>Default</ExceptionHandlingMode>
+        <RetryCount>-1</RetryCount>
+        <Text>Получить список файлов в папке</Text>
+        <_activityFullName>BR.Core.Base.Assign</_activityFullName>
+      </AbstractStep>
+      <AbstractStep z:Id="i10" i:type="ExecutedStep">
+        <Childs>
+          <AbstractStep z:Id="i11" i:type="ExecutedStep">
+            <Childs>
+              <AbstractStep z:Id="i12" i:type="ExecutedStep">
+                <Childs>
+                  <AbstractStep z:Id="i13" i:type="ExecutedStep">
+                    <Childs>
+                      <AbstractStep z:Id="i14" i:type="ExecutedStep">
+                        <Childs>
+                          <AbstractStep z:Id="i15" i:type="ExecutedStep">
+                            <Childs />
+                            <Id>8fd0340e-105c-4cd6-9b89-98d0eaa24202</Id>
+                            <Parent z:Ref="i14" />
+                            <PropertyValues>
+                              <PropertyValue z:Id="i16">
+                                <PropertyName>FilePath</PropertyName>
+                                <_dataType>Expression</_dataType>
+                                <_expression>currentText</_expression>
+                                <_screenShotBase64 i:nil="true" />
+                                <_value i:nil="true" />
+                                <_xpathSettings xmlns:d17p1="http://schemas.datacontract.org/2004/07/BR.XPath" i:nil="true" />
+                              </PropertyValue>
+                            </PropertyValues>
+                            <SelectedOptionId i:nil="true" />
+                            <EnableStatus>true</EnableStatus>
+                            <ExceptionHandlingMode>Default</ExceptionHandlingMode>
+                            <RetryCount>-1</RetryCount>
+                            <Text>Delete File</Text>
+                            <_activityFullName>Activities.Files.DeleteFile</_activityFullName>
+                          </AbstractStep>
+                        </Childs>
+                        <Id>5c9b0152-d77a-463b-b57c-048a60da4171</Id>
+                        <Parent z:Ref="i13" />
+                        <PropertyValues />
+                        <SelectedOptionId i:nil="true" />
+                        <EnableStatus>true</EnableStatus>
+                        <ExceptionHandlingMode>Default</ExceptionHandlingMode>
+                        <RetryCount>-1</RetryCount>
+                        <Text>Тело</Text>
+                        <_activityFullName>BR.Core.Base.Container</_activityFullName>
+                      </AbstractStep>
+                    </Childs>
+                    <Id>97473ff4-c071-454c-9c0b-db56fb49de5f</Id>
+                    <Parent z:Ref="i12" />
+                    <PropertyValues />
+                    <SelectedOptionId i:nil="true" />
+                    <EnableStatus>true</EnableStatus>
+                    <ExceptionHandlingMode>Default</ExceptionHandlingMode>
+                    <RetryCount>-1</RetryCount>
+                    <Text i:nil="true" />
+                    <_activityFullName>BR.Core.Base.Container</_activityFullName>
+                  </AbstractStep>
+                </Childs>
+                <Id>5bb8c94c-65cf-4ff9-a6c0-9eb78bd05ff1</Id>
+                <Parent z:Ref="i11" />
+                <PropertyValues>
+                  <PropertyValue z:Id="i17">
+                    <PropertyName>Collection</PropertyName>
+                    <_dataType>Expression</_dataType>
+                    <_expression>FileArray</_expression>
+                    <_screenShotBase64 i:nil="true" />
+                    <_value i:nil="true" />
+                    <_xpathSettings xmlns:d11p1="http://schemas.datacontract.org/2004/07/BR.XPath" i:nil="true" />
+                  </PropertyValue>
+                  <PropertyValue z:Id="i18">
+                    <PropertyName>Iterator</PropertyName>
+                    <_dataType>Expression</_dataType>
+                    <_expression>currentText</_expression>
+                    <_screenShotBase64 i:nil="true" />
+                    <_value i:nil="true" />
+                    <_xpathSettings xmlns:d11p1="http://schemas.datacontract.org/2004/07/BR.XPath" i:nil="true" />
+                  </PropertyValue>
+                  <PropertyValue z:Id="i19">
+                    <PropertyName>Counter</PropertyName>
+                    <_dataType>Expression</_dataType>
+                    <_expression></_expression>
+                    <_screenShotBase64 i:nil="true" />
+                    <_value i:nil="true" />
+                    <_xpathSettings xmlns:d11p1="http://schemas.datacontract.org/2004/07/BR.XPath" i:nil="true" />
+                  </PropertyValue>
+                </PropertyValues>
+                <SelectedOptionId i:nil="true" />
+                <EnableStatus>true</EnableStatus>
+                <ExceptionHandlingMode>Default</ExceptionHandlingMode>
+                <RetryCount>-1</RetryCount>
+                <Text>Удалить каждый файл в папке</Text>
+                <_activityFullName>BR.Core.Base.LoopForEach</_activityFullName>
+              </AbstractStep>
+            </Childs>
+            <Id>c2a0e713-d22c-49d6-86c0-7688b4ca690b</Id>
+            <Parent z:Ref="i10" />
+            <PropertyValues />
+            <SelectedOptionId i:nil="true" />
+            <EnableStatus>true</EnableStatus>
+            <ExceptionHandlingMode>Default</ExceptionHandlingMode>
+            <RetryCount>-1</RetryCount>
+            <Text></Text>
+            <_activityFullName>BR.Core.Base.IfTrue</_activityFullName>
+          </AbstractStep>
+          <AbstractStep z:Id="i20" i:type="ExecutedStep">
+            <Childs />
+            <Id>b002b8c6-4313-4575-990b-eadb22eed8af</Id>
+            <Parent z:Ref="i10" />
+            <PropertyValues />
+            <SelectedOptionId i:nil="true" />
+            <EnableStatus>true</EnableStatus>
+            <ExceptionHandlingMode>Default</ExceptionHandlingMode>
+            <RetryCount>-1</RetryCount>
+            <Text></Text>
+            <_activityFullName>BR.Core.Base.IfFalse</_activityFullName>
+          </AbstractStep>
+        </Childs>
+        <Id>9d623bda-813e-4d13-895a-d74ef5d065ae</Id>
+        <Parent z:Ref="i2" />
+        <PropertyValues>
+          <PropertyValue z:Id="i21">
+            <PropertyName>Condition</PropertyName>
+            <_dataType>Expression</_dataType>
+            <_expression>FileArray!=null</_expression>
+            <_screenShotBase64 i:nil="true" />
+            <_value i:nil="true" />
+            <_xpathSettings xmlns:d7p1="http://schemas.datacontract.org/2004/07/BR.XPath" i:nil="true" />
+          </PropertyValue>
+        </PropertyValues>
+        <SelectedOptionId i:nil="true" />
+        <EnableStatus>true</EnableStatus>
+        <ExceptionHandlingMode>Default</ExceptionHandlingMode>
+        <RetryCount>-1</RetryCount>
+        <Text></Text>
+        <_activityFullName>BR.Core.Base.If</_activityFullName>
+      </AbstractStep>
+      <AbstractStep z:Id="i22" i:type="ExecutedStep">
+        <Childs>
+          <AbstractStep z:Id="i23" i:type="ExecutedStep">
+            <Childs>
+              <AbstractStep z:Id="i24" i:type="ExecutedStep">
+                <Childs>
+                  <AbstractStep z:Id="i25" i:type="ExecutedStep">
+                    <Childs>
+                      <AbstractStep z:Id="i26" i:type="ExecutedStep">
+                        <Childs>
+                          <AbstractStep z:Id="i27" i:type="ExecutedStep">
+                            <Childs />
+                            <Id>06b81dd3-5e30-4ed8-90a1-f1997f57f3c9</Id>
+                            <Parent z:Ref="i26" />
+                            <PropertyValues>
+                              <PropertyValue z:Id="i28">
+                                <PropertyName>FilePath</PropertyName>
+                                <_dataType>Expression</_dataType>
+                                <_expression>currentText</_expression>
+                                <_screenShotBase64 i:nil="true" />
+                                <_value i:nil="true" />
+                                <_xpathSettings xmlns:d17p1="http://schemas.datacontract.org/2004/07/BR.XPath" i:nil="true" />
+                              </PropertyValue>
+                            </PropertyValues>
+                            <SelectedOptionId i:nil="true" />
+                            <EnableStatus>true</EnableStatus>
+                            <ExceptionHandlingMode>Default</ExceptionHandlingMode>
+                            <RetryCount>-1</RetryCount>
+                            <Text>Delete File</Text>
+                            <_activityFullName>Activities.Files.DeleteFile</_activityFullName>
+                          </AbstractStep>
+                        </Childs>
+                        <Id>38d24b17-c8d0-498b-946b-9bea94da34d8</Id>
+                        <Parent z:Ref="i25" />
+                        <PropertyValues />
+                        <SelectedOptionId i:nil="true" />
+                        <EnableStatus>true</EnableStatus>
+                        <ExceptionHandlingMode>Default</ExceptionHandlingMode>
+                        <RetryCount>-1</RetryCount>
+                        <Text>Тело</Text>
+                        <_activityFullName>BR.Core.Base.Container</_activityFullName>
+                      </AbstractStep>
+                    </Childs>
+                    <Id>7a0fd69b-bc5e-48af-a56d-7c2b7b307482</Id>
+                    <Parent z:Ref="i24" />
+                    <PropertyValues />
+                    <SelectedOptionId i:nil="true" />
+                    <EnableStatus>true</EnableStatus>
+                    <ExceptionHandlingMode>Default</ExceptionHandlingMode>
+                    <RetryCount>-1</RetryCount>
+                    <Text i:nil="true" />
+                    <_activityFullName>BR.Core.Base.Container</_activityFullName>
+                  </AbstractStep>
+                </Childs>
+                <Id>2cd4e518-90fa-4830-8b29-1c03a5a3f63d</Id>
+                <Parent z:Ref="i23" />
+                <PropertyValues>
+                  <PropertyValue z:Id="i29">
+                    <PropertyName>Collection</PropertyName>
+                    <_dataType>Expression</_dataType>
+                    <_expression>UploadFileArray</_expression>
+                    <_screenShotBase64 i:nil="true" />
+                    <_value i:nil="true" />
+                    <_xpathSettings xmlns:d11p1="http://schemas.datacontract.org/2004/07/BR.XPath" i:nil="true" />
+                  </PropertyValue>
+                  <PropertyValue z:Id="i30">
+                    <PropertyName>Iterator</PropertyName>
+                    <_dataType>Expression</_dataType>
+                    <_expression>currentText</_expression>
+                    <_screenShotBase64 i:nil="true" />
+                    <_value i:nil="true" />
+                    <_xpathSettings xmlns:d11p1="http://schemas.datacontract.org/2004/07/BR.XPath" i:nil="true" />
+                  </PropertyValue>
+                  <PropertyValue z:Id="i31">
+                    <PropertyName>Counter</PropertyName>
+                    <_dataType>Expression</_dataType>
+                    <_expression></_expression>
+                    <_screenShotBase64 i:nil="true" />
+                    <_value i:nil="true" />
+                    <_xpathSettings xmlns:d11p1="http://schemas.datacontract.org/2004/07/BR.XPath" i:nil="true" />
+                  </PropertyValue>
+                </PropertyValues>
+                <SelectedOptionId i:nil="true" />
+                <EnableStatus>true</EnableStatus>
+                <ExceptionHandlingMode>Default</ExceptionHandlingMode>
+                <RetryCount>-1</RetryCount>
+                <Text>Удалить каждый файл в папке</Text>
+                <_activityFullName>BR.Core.Base.LoopForEach</_activityFullName>
+              </AbstractStep>
+            </Childs>
+            <Id>f3cef5f2-297e-4da9-9075-2c4a819e34b3</Id>
+            <Parent z:Ref="i22" />
+            <PropertyValues />
+            <SelectedOptionId i:nil="true" />
+            <EnableStatus>true</EnableStatus>
+            <ExceptionHandlingMode>Default</ExceptionHandlingMode>
+            <RetryCount>-1</RetryCount>
+            <Text></Text>
+            <_activityFullName>BR.Core.Base.IfTrue</_activityFullName>
+          </AbstractStep>
+          <AbstractStep z:Id="i32" i:type="ExecutedStep">
+            <Childs />
+            <Id>cf09ec60-8086-4bc6-a159-65f8fd504ee7</Id>
+            <Parent z:Ref="i22" />
+            <PropertyValues />
+            <SelectedOptionId i:nil="true" />
+            <EnableStatus>true</EnableStatus>
+            <ExceptionHandlingMode>Default</ExceptionHandlingMode>
+            <RetryCount>-1</RetryCount>
+            <Text></Text>
+            <_activityFullName>BR.Core.Base.IfFalse</_activityFullName>
+          </AbstractStep>
+        </Childs>
+        <Id>ae62fac6-daee-45f6-a05a-fb02a68a563e</Id>
+        <Parent z:Ref="i2" />
+        <PropertyValues>
+          <PropertyValue z:Id="i33">
+            <PropertyName>Condition</PropertyName>
+            <_dataType>Expression</_dataType>
+            <_expression>UploadFileArray!=null</_expression>
+            <_screenShotBase64 i:nil="true" />
+            <_value i:nil="true" />
+            <_xpathSettings xmlns:d7p1="http://schemas.datacontract.org/2004/07/BR.XPath" i:nil="true" />
+          </PropertyValue>
+        </PropertyValues>
+        <SelectedOptionId i:nil="true" />
+        <EnableStatus>true</EnableStatus>
+        <ExceptionHandlingMode>Default</ExceptionHandlingMode>
+        <RetryCount>-1</RetryCount>
+        <Text></Text>
+        <_activityFullName>BR.Core.Base.If</_activityFullName>
       </AbstractStep>
     </Childs>
     <Id>e78ec13c-ac13-471b-88d9-655098b0e8bb</Id>
@@ -420,14 +349,14 @@
   <Name>System1_ClearData.pix</Name>
   <Namespaces xmlns:d2p1="http://schemas.microsoft.com/2003/10/Serialization/Arrays" />
   <Params>
-    <Parameter z:Id="i41">
+    <Parameter z:Id="i34">
       <DefaultValueExpression>""</DefaultValueExpression>
       <Description></Description>
       <Name>in_DowloadPath</Name>
       <RunnerType>None</RunnerType>
       <TypeString>System.String</TypeString>
     </Parameter>
-    <Parameter z:Id="i42">
+    <Parameter z:Id="i35">
       <DefaultValueExpression>""</DefaultValueExpression>
       <Description></Description>
       <Name>in_UploadPath</Name>
