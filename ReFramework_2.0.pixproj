@@ -81,13 +81,9 @@
     </ProjectFileItem>
     <ProjectFileItem z:Id="i21">
       <IsMain>false</IsMain>
-      <Path>System1\System1_Navigate_To_UpdateWorkItem.pix</Path>
-    </ProjectFileItem>
-    <ProjectFileItem z:Id="i22">
-      <IsMain>false</IsMain>
       <Path>System1\System1_UpdateWorkItems.pix</Path>
     </ProjectFileItem>
-    <ProjectFileItem z:Id="i23">
+    <ProjectFileItem z:Id="i22">
       <IsMain>false</IsMain>
       <Path>System1\System1_UploadYearlyReport.pix</Path>
     </ProjectFileItem>
